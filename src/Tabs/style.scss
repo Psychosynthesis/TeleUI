@@ -1,0 +1,29 @@
+@import '@Commn/colors';
+@import '@Commn/sizes';
+
+.tabs-container {
+	padding-bottom: $base-gap;
+
+	.tabs-captions {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+		.tab-caption {
+			font-family: Roboto;
+			font-size: 16px;
+			font-weight: 500;
+			margin: $base-gap 0;
+			margin-bottom: $max-gap;
+			color: $defaultThemeGray;
+			user-select: none;
+			cursor: pointer;
+
+			&.current-tab {
+				color: $defaultThemeAccent;
+				border-bottom: 3px solid $defaultThemeAccent;
+				padding-bottom: $base-gap;
+			}
+		}
+	}
+}

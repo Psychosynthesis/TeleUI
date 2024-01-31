@@ -1,0 +1,21 @@
+@import '@Commn/colors';
+@import '@Commn/sizes';
+
+.progress-bar {
+	overflow: hidden;
+  width: 100%;
+
+	.bar-background {
+		display: block;
+    background: $defaultThemeGray;
+    border-radius: $baseBorderRadius;
+
+    .completed-progress {
+      display: block;
+      border-radius: $baseBorderRadius;
+      background: $defaultThemeAccent;
+      padding: 2px;
+      width: 0;
+    }
+	}
+}

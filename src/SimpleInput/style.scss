@@ -1,0 +1,66 @@
+@import '@Commn/colors';
+@import '@Commn/sizes';
+
+.simple-input-container {
+	min-height: $max-gap;
+	max-width: 100%;
+	padding-left: $base-gap;
+
+	&.unacceptable {
+		input {
+			color: $defaultThemeRed;
+		}
+	}
+
+	.simple-input-main-row {
+		display: flex;
+		align-items: baseline;
+
+		input {
+			font-family: Roboto;
+			font-size: 16px;
+			font-weight: 400;
+			background: none;
+			border: none;
+			margin: 0;
+			padding: 0;
+			line-height: 19px;
+			max-width: 100% !important;
+
+			&[type="number"]::-webkit-outer-spin-button,
+			&[type="number"]::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+			}
+
+			&[type='number'],
+			&[type="number"]:hover,
+			&[type="number"]:focus {
+					appearance: none;
+					-moz-appearance: textfield;
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.simple-input-label {
+			color: $defaultThemeHintText;
+			margin-right: $min-gap;
+			display: inline-flex;
+			align-items: flex-end;
+		}
+
+		.simple-input-units {
+			display: flex;
+			align-items: flex-end;
+			color: $defaultThemeHintText;
+		}
+	}
+
+	.simple-input-underline {
+		height: 1px;
+		margin-top: $middle-gap;
+		border-bottom: 1px solid $defaultThemeHintText;
+	}
+}
