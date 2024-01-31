@@ -39,7 +39,7 @@ const Guide = () => {
       <hr />
       <br />
       <div className="component-row">
-        <h4>AmountInput</h4>
+        <h3>AmountInput</h3>
         You can see a similar-looking component in the official
         <a href="https://t.me/wallet" target="_blank" rel="noopener noreferrer">@Wallet</a> bot (for example,
         when replenishing or entering the purchase amount). We've added an optional signature to the left.
@@ -69,7 +69,7 @@ const Guide = () => {
         </pre>
       </div>
       <div className="component-row">
-        <h4>Button</h4>
+        <h3>Button</h3>
         This is just a button. No, really.
         May have an icon (see the Sprite section for available icons).
         But if the button is too small, the icon will not be displayed.

@@ -6,10 +6,12 @@ import { version } from './package.json';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
+  const isProd = mode === 'production';
   return {
-    base: mode === 'production' ? 'https://psychosynthesis.github.io/Teleapstyle/' : '',
+    base: isProd ? 'https://psychosynthesis.github.io/Teleapstyle/' : '',
+    envDir: path.resolve(__dirname, './envs'),
     esbuild: {
-      pure: mode === 'production' ? ['console.log'] : [],
+      pure: isProd ? ['console.log'] : [],
     },
     // logLevel: mode === 'production' ? 'silent' : 'warn',
     // clearScreen: mode === 'production',

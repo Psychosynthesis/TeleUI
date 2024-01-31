@@ -12,6 +12,11 @@ export const Icon: React.FC<IconProps> = ({
 	const innerIconSize = backgroundColor ? definedSize - 2 : definedSize;
 	const maxSize = size ? sizeFormatted : '30px';
 
+	//@ts-ignore
+	const spritePath = import.meta.env.VITE_ICON_SPRITE_PATH + name;
+
+	console.log(import.meta);
+
 	const cls = clsx({ "icon-container": true, [className!]: className });
 	return (
 		<div
@@ -30,7 +35,7 @@ export const Icon: React.FC<IconProps> = ({
 					role="img"
 					viewBox={`0 0 ${innerIconSize} ${innerIconSize}`}
 				>
-					<use xlinkHref={'/sprite.svg#'+name} xmlnsXlink="https://www.w3.org/1999/xlink"></use>
+					<use xlinkHref={spritePath} xmlnsXlink="https://www.w3.org/1999/xlink"></use>
 				</svg>
 			</div>
 		</div>
