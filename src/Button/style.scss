@@ -17,7 +17,7 @@
 	background: $defaultThemeAccent;
 
 	&:hover {
-		border-color: $defaultThemeElementsText;
+		border-color: $defaultThemeElementsText !important;
 	}
 
 	&:disabled {
@@ -32,7 +32,7 @@
 
 	.button-icon {
 		display: inline-flex;
-		max-height: inherit;
+		max-height: 100%;
 		margin-right: $base-gap;
 
 		svg {

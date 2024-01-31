@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { useState, useEffect, useRef } from 'react';
+import { isExistAndNotNull } from 'vanicom';
 
 import './style.scss';
 
@@ -8,12 +9,12 @@ import type { AmountInputProps }  from './types';
 export const AmountInput: React.FC<AmountInputProps> = ({
 	className, value, valueSetter, placeholder, label, inputStyle, units, max
 }) => {
-	const [ fieldWidth, setWidth ] = useState('auto');
 	const [ inputError, setError ] = useState(false);
 	const inputRef: React.RefObject<HTMLInputElement> = useRef(null);
+	const haveMax = typeof max !== 'undefined';
 
 	const errorCheck = (value: number) => {
-		if (max && (value > max)) {
+		if (haveMax && (value > max)) {
 			setError(true);
 		} else {
 			setError(false);
@@ -37,15 +38,15 @@ export const AmountInput: React.FC<AmountInputProps> = ({
 	}
 
 	const mainClass = clsx({ 'amount-input-container': true, [className!]: className, 'unacceptable': inputError });
-	const inputStylesCasted = { ...inputStyle, width: fieldWidth }
+	const newWidth = isExistAndNotNull(value) ? ((String(value).length * 19) + 2 + 'px') : '25px';
+	const inputStylesCasted = { ...inputStyle, width: newWidth }
 	if (inputError && inputStylesCasted.color) delete inputStylesCasted.color;
 
 	useEffect(
 		() => {
 			if (inputRef.current) {
+				haveMax && errorCheck(value);
 				inputRef.current.value = String(value);
-				setWidth((String(value).length * 20) + 13 + 'px');
-				if (max && value) { errorCheck(value); }
 			}
 		},
 		[value, max, inputRef.current]

@@ -42,6 +42,11 @@
 			&:focus {
 				outline: none;
 			}
+
+			::placeholder {
+			  color: blue;
+			  font-size: 26px;
+			}
 		}
 
 		.amount-input-label {
@@ -49,12 +54,14 @@
 			margin-right: $min-gap;
 			display: inline-flex;
 			align-items: flex-end;
+			user-select: none;
 		}
 
 		.amount-input-units {
 			display: flex;
 			align-items: flex-end;
 			color: $defaultThemeHintText;
+			user-select: none;
 		}
 	}
 
