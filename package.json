@@ -1,9 +1,9 @@
 {
   "name": "teleapstyle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A small library of components for creating mini-applications in the Telegram ecosystem",
   "main": "src/index.ts",
-  "homepage": "https://github.com/Psychosynthesis/Teleapstyle",
+  "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build",

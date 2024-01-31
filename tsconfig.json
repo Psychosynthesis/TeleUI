@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "es2017",
     "useDefineForClassFields": true,
-    "lib": ["ES2023", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
+    "lib": ["es2023", "dom", "dom.iterable"],
+    "module": "esnext",
     "skipLibCheck": true,
 
     /* Bundler mode */

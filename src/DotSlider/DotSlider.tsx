@@ -2,12 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import clsx from 'clsx';
 import './style.scss';
 
+import type { OptionType }  from '@Commn/types';
 import type { DotSliderProps }  from './types';
 
 // const minSwipeDistance = 15; 	// Расстояние между touchStart и touchEnd, чтобы оно было определено как свайп
 
 export const DotSlider: React.FC<DotSliderProps> = ({ values, valueSetter, className, lineColor }) => {
-	const currentDot = values.findLastIndex((item) => item.selected);
+	const currentDot = values.findLastIndex((item: OptionType) => item.selected);
 	const lastActiveLine = currentDot - 1; // Последняя выделенная цветом линия
 	const containerRef = useRef<HTMLDivElement>(null);
 

@@ -24,7 +24,7 @@ export const Icon: React.FC<IconProps> = ({
 				maxWidth: maxSize
 			}}
 		>
-			<div className="background-icon-plate" style={{ background: backgroundColor }} >
+			<div className="background-icon-plate" style={{ background: backgroundColor, maxHeight: innerIconSize }} >
 				<svg
 					style={{ color: color, width: innerIconSize+'px', height: innerIconSize+'px' }}
 					role="img"
