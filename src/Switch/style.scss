@@ -1,0 +1,42 @@
+@import '@Commn/colors';
+@import '@Commn/sizes';
+
+.custom-switch {
+  display: flex;
+  align-items: center;
+  height: 20px;
+
+  .switch-background {
+    width: 30px;
+    height: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .switch-punkt,
+  .switch-punkt-selected {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: 2px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: $defaultThemeElementsText;
+
+    -webkit-transition: left 0.4s;
+    -moz-transition: left 0.4s;
+    -o-transition: left 0.4s;
+    -ms-transition: left 0.4s;
+    transition: left 0.4s;
+  }
+
+  .switch-punkt {
+    left: -15%;
+
+    &-selected {
+      left: 50%;
+    }
+  }
+}
