@@ -5,9 +5,6 @@
   "main": "src/index.ts",
   "homepage": "https://github.com/Psychosynthesis/Teleapstyle",
   "scripts": {
-    "dev": "vite --host",
-    "build": "tsc && vite build",
-    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,20 +13,13 @@
   "author": "Nick G.",
   "license": "MIT",
   "dependencies": {
-    "react": "~18.2.0",
-    "react-dom": "~18.2.0",
-    "vanicom": "^1.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.4.7",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^4.0.3",
     "clsx": "^2.0.0",
-    "gh-pages": "^6.1.1",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "vanicom": "^1.1.0",
     "sass": "^1.69.4",
-    "typescript": "^5.0.2",
-    "vite": "~4.5.0",
-    "vite-plugin-css-export": "^2.0.0"
+    "typescript": "^5.0.2"
   }
 }
