@@ -4,10 +4,9 @@ logs
 npm-debug.log*
 pnpm-debug.log*
 
+# Dist and dependents
+dist
 node_modules
-
-# Dist
-
 *.local
 
 # Editor directories and files

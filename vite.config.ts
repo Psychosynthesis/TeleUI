@@ -7,6 +7,7 @@ import { version } from './package.json';
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
+    base: mode === 'production' ? 'https://psychosynthesis.github.io/Teleapstyle/' : '',
     esbuild: {
       pure: mode === 'production' ? ['console.log'] : [],
     },
@@ -14,7 +15,8 @@ export default defineConfig(({ mode }) => {
     // clearScreen: mode === 'production',
     plugins: [react()],
     build: {
-      assetsInlineLimit: 1024, // Ресурсы меньшего размера будут встроены как base64
+      assetsDir: '', // Place all assets in root
+      assetsInlineLimit: 1024, // Smaller resources will be embedded as base64
       sourcemap: false,
     },
     define: {
