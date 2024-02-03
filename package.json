@@ -4,6 +4,10 @@
   "description": "A small library of components for creating mini-applications in the Telegram ecosystem",
   "main": "src/index.ts",
   "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psychosynthesis/Teleapstyle.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
