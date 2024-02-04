@@ -83,7 +83,6 @@ const Guide = () => {
 
           <Components.Button
             onClick={() => {}}
-            icon="mask"
             color="#f455ee"
           >
             Button with Icon & color

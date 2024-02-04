@@ -1,4 +1,4 @@
-import type { Color }  from '@Commn/types';
+import type { Color }  from '../types';
 
 export type RangeProps = {
   className?: string;

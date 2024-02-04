@@ -1,4 +1,4 @@
-import type { OptionType }  from '@Commn/types';
+import type { OptionType }  from '../types';
 
 export type DotSliderProps = {
   values: OptionType[];

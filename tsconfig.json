@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "es2015",
     "useDefineForClassFields": true,
-    "lib": ["es2023", "dom", "dom.iterable"],
+    "lib": ["es2020", "dom", "dom.iterable"],
     "module": "esnext",
     "skipLibCheck": true,
 
     /* Bundler mode */
     "moduleResolution": "node",
+    // Node resolution first looks for modules in the node_modules directory of the current file’s directory,
+    // and then proceeds to search in parent directories until it reaches the root of the file system.
+    // It also considers the main field specified in the package.json file of each module to determine the entry point.
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -16,8 +19,8 @@
     "baseUrl": ".",
     "paths": {
         "@/*": ["src/*"],
-        "@Commn": ["commons/"],
-        "@Commn/*": ["commons/*"],
+        "@Commn": ["src/commons/"],
+        "@Commn/*": ["src/commons/*"],
     },
 
     /* Linting */
@@ -27,5 +30,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.dev.json" }]
 }
