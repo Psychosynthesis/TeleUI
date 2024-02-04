@@ -1,6 +1,7 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import ViteCSSExportPlugin from 'vite-plugin-css-export';
 
 import { version } from './package.json';
 
@@ -15,7 +16,7 @@ export default defineConfig(({ mode }) => {
     },
     // logLevel: mode === 'production' ? 'silent' : 'warn',
     // clearScreen: mode === 'production',
-    plugins: [react()],
+    plugins: [react(), ViteCSSExportPlugin()],
     build: {
       assetsDir: '', // Place all assets in root
       assetsInlineLimit: 1024, // Smaller resources will be embedded as base64
