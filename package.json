@@ -1,34 +1,48 @@
 {
   "name": "teleapstyle",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "A small library of components for creating mini-applications in the Telegram ecosystem",
-  "main": "build/index.ts",
-  "types": "build/index.d.ts",
+  "main": "./build/teleapstyle.umd.cjs",
+  "types": "./build/index.d.ts",
+  "module": "./build/teleapstyle.js",
+  "type": "module",
   "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Psychosynthesis/Teleapstyle.git"
-  },
   "scripts": {
+    "dev": "vite --host",
+    "build": "tsc src/index.ts --declaration --jsx react-jsx --esModuleInterop --outDir build && vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "telegram", "components"
-  ],
+  "files": [ "build" ],
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./build/teleapstyle.js",
+        "types": "./build/index.d.ts"
+      },
+      "require": {
+        "default": "./build/teleapstyle.umd.cjs",
+        "types": "./build/index.d.ts"
+      }
+    }
+  },
+  "keywords": [ "telegram", "components" ],
   "author": "Nick G.",
   "license": "MIT",
   "dependencies": {
-    "clsx": "^2.0.0",
     "react": "~18.2.0",
+    "react-dom": "~18.2.0",
     "vanicom": "^1.1.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.15",
     "@types/node": "^20.4.7",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
-    "vite": "~4.5.0",
-    "vite-plugin-css-export": "^2.0.0",
+    "clsx": "^2.0.0",
+    "gh-pages": "^6.1.1",
     "sass": "^1.69.4",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "vite": "~4.5.0",
+    "vite-plugin-css-export": "^2.0.0"
   }
 }
