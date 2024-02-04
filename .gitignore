@@ -4,10 +4,16 @@ logs
 npm-debug.log*
 pnpm-debug.log*
 
+# Source files does not include in build
+src
+src/*
+
 # Dist and dependents
 dist
 node_modules
+public
 *.local
+package-lock.json
 
 # Editor directories and files
 .vscode/*

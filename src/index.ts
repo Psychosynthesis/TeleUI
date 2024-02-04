@@ -2,7 +2,6 @@ export { AmountInput } from './AmountInput/AmountInput';
 export { Button } from './Button/Button';
 export { Checkbox } from './Checkbox/Checkbox';
 export { DotSlider } from './DotSlider/DotSlider';
-export { Icon } from './Icon/Icon';
 export { Loader } from './Loader/Loader';
 export { ProgressBar } from './ProgressBar/ProgressBar';
 export { Range } from './Range/Range';
