@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import clsx from 'clsx';
 import './style.scss';
 
-import type { OptionType }  from '../types';
+import type { OptionType }  from '../../types';
 import type { DotSliderProps }  from './types';
 
 // const minSwipeDistance = 15; 	// Расстояние между touchStart и touchEnd, чтобы оно было определено как свайп
