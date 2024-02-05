@@ -1,6 +1,6 @@
 {
   "name": "teleapstyle",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A small library of components for creating mini-applications in the Telegram ecosystem",
   "main": "./build/teleapstyle.umd.cjs",
   "types": "./build/index.d.ts",
@@ -9,7 +9,7 @@
   "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
   "scripts": {
     "dev": "vite --host",
-    "build": "tsc src/index.ts --declaration --jsx react-jsx --esModuleInterop --outDir build && vite build",
+    "build": "vite build && tsc src/index.ts --declaration --emitDeclarationOnly --jsx react-jsx --esModuleInterop --outDir build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [ "build" ],

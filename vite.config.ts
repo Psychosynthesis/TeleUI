@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => {
       assetsInlineLimit: 1024, // Smaller resources will be embedded as base64
       sourcemap: false,
       outDir: './build',
-      emptyOutDir: false, // avoid vite build deleting content of outDir
+      // emptyOutDir: false, // avoid vite build deleting content of outDir
       lib: {
         entry: resolve(__dirname, './src/index.ts'),
         name: 'Telegram apstyle',
