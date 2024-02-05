@@ -4,11 +4,9 @@ logs
 npm-debug.log*
 pnpm-debug.log*
 
-# Build not in git on dev branch
-# build
-
-# Dist and dependents (it's only for manual)
+# Dist folder used only for manual
 dist
+
 node_modules
 *.local
 
