@@ -5,7 +5,7 @@ npm-debug.log*
 pnpm-debug.log*
 
 # Build not in git on dev branch
-build
+# build
 
 # Dist and dependents (it's only for manual)
 dist
