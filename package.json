@@ -1,6 +1,6 @@
 {
   "name": "teleapstyle",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A small library of components for creating mini-applications in the Telegram ecosystem",
   "main": "./build/teleapstyle.umd.cjs",
   "types": "./build/index.d.ts",
