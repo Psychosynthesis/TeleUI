@@ -1,15 +1,12 @@
 {
   "name": "teleapstyle",
+  "author": "Nick G.",
+  "license": "MIT",
   "version": "0.1.6",
   "description": "A small library of components for creating mini-applications in the Telegram ecosystem",
   "main": "./build/teleapstyle.umd.cjs",
   "types": "./build/index.d.ts",
   "module": "./build/teleapstyle.js",
-  "type": "module",
-  "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "files": [ "build" ],
   "exports": {
     ".": {
@@ -20,9 +17,18 @@
       "require": "./dist/teleapstyle.umd.cjs"
     }
   },
+  "type": "module",
+  "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psychosynthesis/Teleapstyle.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "syncw": "del /s /q build && git checkout dev build/",
+    "syncl": "rm -i build/ && git checkout dev build/"
+  },
   "keywords": [ "telegram", "components" ],
-  "author": "Nick G.",
-  "license": "MIT",
   "dependencies": {
     "react": "~18.2.0",
     "react-dom": "~18.2.0",
