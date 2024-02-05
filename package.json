@@ -1,10 +1,10 @@
 {
   "name": "teleapstyle",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A small library of components for creating mini-applications in the Telegram ecosystem",
-  "main": "./build/index.d.ts",
+  "main": "./build/teleapstyle.umd.cjs",
   "types": "./build/index.d.ts",
-  "module": "./build/index.js",
+  "module": "./build/teleapstyle.js",
   "type": "module",
   "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
   "scripts": {
@@ -14,9 +14,10 @@
   "exports": {
     ".": {
       "import": {
-        "default": "./build/index.js",
+        "default": "./build/teleapstyle.js",
         "types": "./build/index.d.ts"
-      }
+      },
+      "require": "./dist/teleapstyle.umd.cjs"
     }
   },
   "keywords": [ "telegram", "components" ],
