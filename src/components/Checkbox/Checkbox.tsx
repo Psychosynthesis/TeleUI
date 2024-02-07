@@ -16,7 +16,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 		valueSetter(checkboxRef.current.checked);
 	}
 
-	const containerClass = clsx({ 'custom-checkbox-container': true, 'no-text': !text, [className!]: className, 'rounded': rounded });
+	const containerClass = clsx({ 'teleaps-custom-checkbox': true, 'no-text': !text, [className!]: className, 'rounded': rounded });
 
 	return (
 		<div className={containerClass}>
@@ -27,6 +27,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 				onChange={onChangeHandler}
 				ref={checkboxRef}
 				checked={checked}
+				name={idForLabel}
 			/>
 			<label htmlFor={idForLabel}>{text}</label>
 		</div>

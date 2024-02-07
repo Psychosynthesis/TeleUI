@@ -18,10 +18,10 @@ const Guide = () => {
       The main idea of Teleapstyle is to create a simple and minimalistic component library that
       would look as close as possible to the native design of Telegram Mini Apps.
       <br /><br />
-      Please note - the components by default use the standard colors of the standard Telegram light theme
+      Please note - the components by default use the standard colors of the standard Telegram dark theme
       and don't use theme CSS variables (it is implemented in this order to not to update the package every time
       if vars changed in initData, due to TMA.js development), instead you can pass it to the components that
-      support color-parameter, or just pass your own class.
+      support color-parameter, or just pass your own class and style them as you want.
       <br /><br />
       You can <a target="_blank" rel="noopener noreferrer" href="https://github.com/Psychosynthesis/Teleapstyle">suggest your improvements</a>, we will definitely consider them.
 

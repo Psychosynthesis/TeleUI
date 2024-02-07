@@ -1,11 +1,12 @@
 @import '@Commn/colors';
 @import '@Commn/sizes';
 
-.custom-checkbox-container {
+.teleaps-custom-checkbox {
 	display: flex;
 	text-align: center;
 
 	.custom-checkbox { /* Скрываем стандартный чебокс */
+		appearance: none;
 		display: none;
 		line-height: 20px;
 	}

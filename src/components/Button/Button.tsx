@@ -20,7 +20,7 @@ export const Button: React.FC<ButtonProps> = ({
 		borderColor: color,
 	}
 
-	const cls = clsx({ 'custom-button': true, [type!]: type, [color!]: color, [className!]: className });
+	const cls = clsx({ 'teleaps-custom-button': true, [type!]: type, [color!]: color, [className!]: className });
 	return (
 		<button className={cls} onClick={onClickHandler} style={mainStyle} disabled={disabled}>
 			{ children }

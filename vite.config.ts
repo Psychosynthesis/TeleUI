@@ -1,8 +1,10 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import ViteCSSExportPlugin from 'vite-plugin-css-export';
 import { resolve } from 'path';
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
+// cssInjectedByJsPlugin is used to inject the resulting CSS into the output module
+// because when using `build.cssCodeSplit: true` the styles are only imported into the .umd.cjs file
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -13,7 +15,7 @@ export default defineConfig(({ mode }) => {
     },
     // logLevel: mode === 'production' ? 'silent' : 'warn',
     // clearScreen: mode === 'production',
-    plugins: [ react(), ViteCSSExportPlugin() ],
+    plugins: [ react(), cssInjectedByJsPlugin() ],
     build: {
       assetsDir: '', // Place all assets in root
       assetsInlineLimit: 1024, // Smaller resources will be embedded as base64
@@ -22,13 +24,13 @@ export default defineConfig(({ mode }) => {
       // emptyOutDir: false, // avoid vite build deleting content of outDir
       lib: {
         entry: resolve(__dirname, './src/index.ts'),
-        name: 'Telegram apstyle',
+        name: 'Teleapstyle',
         fileName: 'teleapstyle'
       },
       rollupOptions: {
         external: ['clsx', 'react', 'vanicom'],
         output: {
-          globals: { clsx: 'clsx', react: 'React', vanicom: 'vanicom' }
+          globals: { clsx: 'clsx', react: 'React', vanicom: 'Vanicom' }
         }
       }
     },

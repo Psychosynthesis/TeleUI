@@ -1,6 +1,8 @@
 @import '@Commn/colors';
 @import '@Commn/sizes';
 
+/* This code is essentially used only for the guide; this file is not included in the main build. */
+
 :root {
   font-family: Helvetica, Arial, sans-serif;
   font-synthesis: none;
@@ -11,4 +13,23 @@
 }
 
 html, body { margin: 0; max-width: 100%; }
-body { background-color: $defaultThemeBackground; }
+body { min-width: 320px; min-height: 100vh; background-color: $defaultThemeBackground; }
+
+
+#main-node {
+  margin: 0 auto;
+  overflow-x: hidden;
+  min-height: 100vh;
+  max-width: 640px;
+}
+
+.component-row {
+  margin-bottom: 30px;
+}
+
+.component-tips-label {
+  font-weight: bold;
+  font-size: 85%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}

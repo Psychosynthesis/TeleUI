@@ -21,7 +21,7 @@ export const Tabs: React.FC<TabsProps> = ({ tabs, defaultIndex }) => {
 	const tabContent = currentTabData ? currentTabData.content : tabs[0].content;
 
 	return (
-		<div className="tabs-container">
+		<div className="teleaps-tabs-container">
 			<div className="tabs-captions">{tabsCaptions}</div>
 			{tabContent}
 		</div>

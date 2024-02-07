@@ -32,7 +32,7 @@ export const SimpleInput: React.FC<SimpleInputProps> = ({
 	const handleFocus = () => setFocus(true);
 	const handleFocusOff = () => setFocus(false);
 
-	const mainClass = clsx({ 'simple-input-container': true, [className!]: className, 'unacceptable': inputError });
+	const mainClass = clsx({ 'teleaps-simple-input': true, [className!]: className, 'unacceptable': inputError });
 	const inputStylesCasted = { ...inputStyle }
 	if (inputError && inputStylesCasted.color) delete inputStylesCasted.color;
 

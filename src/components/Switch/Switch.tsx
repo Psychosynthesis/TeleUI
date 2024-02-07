@@ -6,7 +6,7 @@ import type { SwitchProps }  from './types';
 export const Switch: React.FC<SwitchProps> = ({
   className, selected, switchHandler, activeColor, defaultColor
 }) => {
-  const mainClass = clsx({ 'custom-switch': true, [className!]: className });
+  const mainClass = clsx({ 'teleaps-custom-switch': true, [className!]: className });
   const backgroundClass = clsx({ 'switch-background': true, 'no-select': true });
   const punktClass = clsx({ 'switch-punkt-selected': selected, 'switch-punkt': !selected });
   const color = selected ? activeColor : defaultColor;

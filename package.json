@@ -7,7 +7,9 @@
   "main": "./build/teleapstyle.umd.cjs",
   "types": "./build/index.d.ts",
   "module": "./build/teleapstyle.js",
-  "files": [ "build" ],
+  "files": [
+    "build"
+  ],
   "exports": {
     ".": {
       "import": {
@@ -28,7 +30,10 @@
     "build": "vite build && tsc src/index.ts --declaration --emitDeclarationOnly --jsx react-jsx --esModuleInterop --outDir build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [ "telegram", "components" ],
+  "keywords": [
+    "telegram",
+    "components"
+  ],
   "dependencies": {
     "react": "~18.2.0",
     "react-dom": "~18.2.0",
@@ -44,6 +49,6 @@
     "sass": "^1.69.4",
     "typescript": "^5.0.2",
     "vite": "~4.5.0",
-    "vite-plugin-css-export": "^2.0.0"
+    "vite-plugin-css-injected-by-js": "^3.4.0"
   }
 }

@@ -1,3 +1,4 @@
+(function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode('@charset "UTF-8";.teleaps-amount-input{min-height:24px;max-width:100%;padding-left:0}.teleaps-amount-input.unacceptable input{color:#cc2929}.teleaps-amount-input .amount-input-main-row{display:flex;align-items:baseline}.teleaps-amount-input .amount-input-main-row input{font-family:Roboto;font-size:36px;font-weight:500;background:none;border:none;margin:0;padding:0;line-height:20px;max-width:100%!important}.teleaps-amount-input .amount-input-main-row input[type=number]::-webkit-outer-spin-button,.teleaps-amount-input .amount-input-main-row input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}.teleaps-amount-input .amount-input-main-row input[type=number],.teleaps-amount-input .amount-input-main-row input[type=number]:hover,.teleaps-amount-input .amount-input-main-row input[type=number]:focus{-webkit-appearance:none;appearance:none;-moz-appearance:textfield}.teleaps-amount-input .amount-input-main-row input:focus{outline:none}.teleaps-amount-input .amount-input-main-row input ::placeholder{color:#00f;font-size:26px}.teleaps-amount-input .amount-input-main-row .amount-input-label{color:#7f8c97;margin-right:5px;display:inline-flex;align-items:flex-end;-webkit-user-select:none;user-select:none}.teleaps-amount-input .amount-input-main-row .amount-input-units{display:flex;align-items:flex-end;color:#7f8c97;-webkit-user-select:none;user-select:none}.teleaps-amount-input .amount-input-underline{height:1px;margin-top:8px;border-bottom:1px solid #7f8c97}.teleaps-custom-button{padding:8px;max-height:48px;border-radius:4px;cursor:pointer;white-space:break-spaces;font-style:normal;font-family:Roboto Bold;display:inline-flex;align-items:center;justify-content:center;border:1px solid #50a7ea;color:#fff;background:#50a7ea}.teleaps-custom-button:hover{border-color:#fff!important}.teleaps-custom-button:disabled{opacity:.3}.teleaps-custom-button.outline{background:none;box-shadow:none;color:#50a7ea}.teleaps-custom-checkbox{display:flex;text-align:center}.teleaps-custom-checkbox .custom-checkbox{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:none;line-height:20px}.teleaps-custom-checkbox .custom-checkbox+label{display:inline-flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;line-height:20px}.teleaps-custom-checkbox.no-text .custom-checkbox+label:before{margin-right:0}.teleaps-custom-checkbox.rounded .custom-checkbox+label:before{border-radius:50%}.teleaps-custom-checkbox .custom-checkbox+label:before{content:"";margin-right:12px;display:inline-block;flex-shrink:0;flex-grow:0;border:1px solid #7f8c97;border-radius:4px;background:none;font-size:15px;line-height:20px;cursor:pointer;width:20px;height:20px}.teleaps-custom-checkbox .custom-checkbox:checked+label:before{width:20px;height:20px;line-height:20px;content:"✓ ";color:#fff;background-color:#50a7ea;border-color:transparent}.teleaps-dots-slider{display:flex;height:11px;padding-top:24px;padding-bottom:8px}.teleaps-dots-slider>div{flex-grow:1;display:flex;align-items:center}.teleaps-dots-slider>div:last-child{flex-grow:0}.teleaps-dots-slider .dots-slider-point{width:6px;height:6px;border-radius:50%;margin:0 4px;background:#7f8c97}.teleaps-dots-slider .dots-slider-point.active-dot{background:#50a7ea}.teleaps-dots-slider .dots-slider-point.current-dot{width:11px;height:11px}.teleaps-dots-slider .dots-slider-point.current-dot .dots-slider-caption{bottom:24px;left:0}.teleaps-dots-slider .dots-slider-point .dots-slider-caption{font-size:12px;line-height:14px;position:relative;bottom:26px;color:#7f8c97;-webkit-user-select:none;user-select:none;width:20px;text-align:left}.teleaps-dots-slider .dots-slider-line{height:2px;flex-grow:1;background:#7f8c97}.teleaps-dots-slider .dots-slider-line.active-line{background:#50a7ea}.teleaps-spinner-container{width:100%;height:100vh;margin:0;display:flex;place-items:center;justify-content:center}.teleaps-spinner-container .spinner{height:50px;width:50px;border-left:3px solid #7f8c97;border-bottom:3px solid #7f8c97;border-right:3px solid #7f8c97;border-top:3px solid transparent;border-radius:50%;animation:spinner .8s linear infinite}@keyframes spinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.teleaps-progress-bar{overflow:hidden;width:100%}.teleaps-progress-bar .bar-background{display:block;background:#b0b9c2;border-radius:7px}.teleaps-progress-bar .bar-background .completed-progress{display:block;border-radius:7px;background:#50a7ea;padding:2px;width:0}.teleaps-range-slider input{height:5px;width:100%}.teleaps-range-slider input[type=range]{-webkit-appearance:none}.teleaps-range-slider input[type=range]:focus{outline:none}.teleaps-range-slider input[type=range]::-ms-track{width:100%;cursor:pointer;background:transparent;border-color:transparent;color:transparent}.teleaps-range-slider input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;border:3px solid #6ea0e6;background:#fff;height:24px;width:24px;border-radius:50%;cursor:pointer;margin-top:-6px}.teleaps-range-slider input[type=range]::-moz-range-thumb{border:3px solid #6ea0e6;background:#fff;height:24px;width:24px;border-radius:50%;cursor:pointer}.teleaps-range-slider input[type=range]::-webkit-slider-runnable-track{height:10px;cursor:pointer;background:#50a7ea;border-radius:4px}.teleaps-range-slider input[type=range]:focus::-webkit-slider-runnable-track{background:#50a7ea}.teleaps-range-slider input[type=range]::-moz-range-track{height:10px;cursor:pointer;background:#50a7ea;border-radius:4px}.teleaps-simple-input{min-height:24px;max-width:100%;padding-left:12px}.teleaps-simple-input.unacceptable input{color:#cc2929}.teleaps-simple-input .simple-input-main-row{display:flex;align-items:baseline}.teleaps-simple-input .simple-input-main-row input{font-family:Roboto;font-size:16px;font-weight:400;background:none;border:none;margin:0;padding:0;line-height:19px;max-width:100%!important}.teleaps-simple-input .simple-input-main-row input[type=number]::-webkit-outer-spin-button,.teleaps-simple-input .simple-input-main-row input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}.teleaps-simple-input .simple-input-main-row input[type=number],.teleaps-simple-input .simple-input-main-row input[type=number]:hover,.teleaps-simple-input .simple-input-main-row input[type=number]:focus{-webkit-appearance:none;appearance:none;-moz-appearance:textfield}.teleaps-simple-input .simple-input-main-row input:focus{outline:none}.teleaps-simple-input .simple-input-main-row .simple-input-label{color:#7f8c97;margin-right:5px;display:inline-flex;align-items:flex-end}.teleaps-simple-input .simple-input-main-row .simple-input-units{display:flex;align-items:flex-end;color:#7f8c97}.teleaps-simple-input .simple-input-underline{height:1px;margin-top:8px;border-bottom:1px solid #7f8c97}.teleaps-custom-switch{display:flex;align-items:center;height:20px}.teleaps-custom-switch .switch-background{width:30px;height:13px;border-radius:10px;cursor:pointer;display:flex;align-items:center}.teleaps-custom-switch .switch-punkt,.teleaps-custom-switch .switch-punkt-selected{width:20px;height:20px;position:relative;border:2px solid;border-radius:10px;box-sizing:border-box;background:#fff;-webkit-transition:left .4s;-moz-transition:left .4s;-o-transition:left .4s;-ms-transition:left .4s;transition:left .4s}.teleaps-custom-switch .switch-punkt{left:-15%}.teleaps-custom-switch .switch-punkt-selected{left:50%}.teleaps-tabs-container{padding-bottom:12px}.teleaps-tabs-container .tabs-captions{display:flex;flex-direction:row;justify-content:space-around}.teleaps-tabs-container .tabs-captions .tab-caption{font-family:Roboto;font-size:16px;font-weight:500;margin:12px 0 24px;color:#b0b9c2;-webkit-user-select:none;user-select:none;cursor:pointer}.teleaps-tabs-container .tabs-captions .tab-caption.current-tab{color:#50a7ea;border-bottom:3px solid #50a7ea;padding-bottom:12px}')),document.head.appendChild(e)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
 import Ae, { useState as V, useRef as Q, useEffect as Ie } from "react";
 import k from "clsx";
 import { isExistAndNotNull as We, getRandomString as dr } from "vanicom";
@@ -16,18 +17,18 @@ function vr() {
   if (Ne)
     return J;
   Ne = 1;
-  var o = Ae, s = Symbol.for("react.element"), v = Symbol.for("react.fragment"), h = Object.prototype.hasOwnProperty, u = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, y = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function m(n, l, T) {
-    var p, _ = {}, x = null, P = null;
+  var o = Ae, s = Symbol.for("react.element"), v = Symbol.for("react.fragment"), m = Object.prototype.hasOwnProperty, u = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, y = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function p(n, l, T) {
+    var h, _ = {}, x = null, P = null;
     T !== void 0 && (x = "" + T), l.key !== void 0 && (x = "" + l.key), l.ref !== void 0 && (P = l.ref);
-    for (p in l)
-      h.call(l, p) && !y.hasOwnProperty(p) && (_[p] = l[p]);
+    for (h in l)
+      m.call(l, h) && !y.hasOwnProperty(h) && (_[h] = l[h]);
     if (n && n.defaultProps)
-      for (p in l = n.defaultProps, l)
-        _[p] === void 0 && (_[p] = l[p]);
+      for (h in l = n.defaultProps, l)
+        _[h] === void 0 && (_[h] = l[h]);
     return { $$typeof: s, type: n, key: x, ref: P, props: _, _owner: u.current };
   }
-  return J.Fragment = v, J.jsx = m, J.jsxs = m, J;
+  return J.Fragment = v, J.jsx = p, J.jsxs = p, J;
 }
 var G = {};
 /**
@@ -42,7 +43,7 @@ var G = {};
 var $e;
 function pr() {
   return $e || ($e = 1, process.env.NODE_ENV !== "production" && function() {
-    var o = Ae, s = Symbol.for("react.element"), v = Symbol.for("react.portal"), h = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), y = Symbol.for("react.profiler"), m = Symbol.for("react.provider"), n = Symbol.for("react.context"), l = Symbol.for("react.forward_ref"), T = Symbol.for("react.suspense"), p = Symbol.for("react.suspense_list"), _ = Symbol.for("react.memo"), x = Symbol.for("react.lazy"), P = Symbol.for("react.offscreen"), D = Symbol.iterator, A = "@@iterator";
+    var o = Ae, s = Symbol.for("react.element"), v = Symbol.for("react.portal"), m = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), y = Symbol.for("react.profiler"), p = Symbol.for("react.provider"), n = Symbol.for("react.context"), l = Symbol.for("react.forward_ref"), T = Symbol.for("react.suspense"), h = Symbol.for("react.suspense_list"), _ = Symbol.for("react.memo"), x = Symbol.for("react.lazy"), P = Symbol.for("react.offscreen"), D = Symbol.iterator, A = "@@iterator";
     function F(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -70,7 +71,7 @@ function pr() {
     var E = !1, R = !1, W = !1, Y = !1, ee = !1, le;
     le = Symbol.for("react.module.reference");
     function Me(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === h || e === y || ee || e === u || e === T || e === p || Y || e === P || E || R || W || typeof e == "object" && e !== null && (e.$$typeof === x || e.$$typeof === _ || e.$$typeof === m || e.$$typeof === n || e.$$typeof === l || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === m || e === y || ee || e === u || e === T || e === h || Y || e === P || E || R || W || typeof e == "object" && e !== null && (e.$$typeof === x || e.$$typeof === _ || e.$$typeof === p || e.$$typeof === n || e.$$typeof === l || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -94,7 +95,7 @@ function pr() {
       if (typeof e == "string")
         return e;
       switch (e) {
-        case h:
+        case m:
           return "Fragment";
         case v:
           return "Portal";
@@ -104,7 +105,7 @@ function pr() {
           return "StrictMode";
         case T:
           return "Suspense";
-        case p:
+        case h:
           return "SuspenseList";
       }
       if (typeof e == "object")
@@ -112,7 +113,7 @@ function pr() {
           case n:
             var r = e;
             return fe(r) + ".Consumer";
-          case m:
+          case p:
             var t = e;
             return fe(t._context) + ".Provider";
           case l:
@@ -300,7 +301,7 @@ function pr() {
       switch (e) {
         case T:
           return X("Suspense");
-        case p:
+        case h:
           return X("SuspenseList");
       }
       if (typeof e == "object")
@@ -613,7 +614,7 @@ Check the top-level render call using <` + t + ">.");
             else
               Pe(O, e);
         }
-        return e === h ? sr(w) : ir(w), w;
+        return e === m ? sr(w) : ir(w), w;
       }
     }
     function cr(e, r, t) {
@@ -623,7 +624,7 @@ Check the top-level render call using <` + t + ">.");
       return Fe(e, r, t, !1);
     }
     var lr = ur, fr = cr;
-    G.Fragment = h, G.jsx = lr, G.jsxs = fr;
+    G.Fragment = m, G.jsx = lr, G.jsxs = fr;
   }()), G;
 }
 process.env.NODE_ENV === "production" ? ue.exports = vr() : ue.exports = pr();
@@ -632,26 +633,26 @@ const br = ({
   className: o,
   value: s,
   valueSetter: v,
-  placeholder: h,
+  placeholder: m,
   label: u,
   inputStyle: y,
-  units: m,
+  units: p,
   max: n
 }) => {
-  const [l, T] = V(!1), p = Q(null), _ = typeof n < "u", x = (j) => {
+  const [l, T] = V(!1), h = Q(null), _ = typeof n < "u", x = (j) => {
     _ && j > n ? T(!0) : T(!1);
   }, P = () => {
-    if (!p.current)
+    if (!h.current)
       return;
-    const j = p.current.value;
+    const j = h.current.value;
     let g;
-    g = parseFloat(j), isNaN(g) ? g = 0 : n && g > n && (g = n, T(!0)), v(g), p.current.value = String(g);
-  }, D = k({ "amount-input-container": !0, [o]: o, unacceptable: l }), A = We(s) ? String(s).length * 19 + 2 + "px" : "25px", F = { ...y, width: A };
+    g = parseFloat(j), isNaN(g) ? g = 0 : n && g > n && (g = n, T(!0)), v(g), h.current.value = String(g);
+  }, D = k({ "teleaps-amount-input": !0, [o]: o, unacceptable: l }), A = We(s) ? String(s).length * 19 + 2 + "px" : "25px", F = { ...y, width: A };
   return l && F.color && delete F.color, Ie(
     () => {
-      p.current && (_ && x(s), p.current.value = String(s));
+      h.current && (_ && x(s), h.current.value = String(s));
     },
-    [s, n, p.current]
+    [s, n, h.current]
   ), /* @__PURE__ */ f.jsx("div", { className: D, children: /* @__PURE__ */ f.jsxs("div", { className: "amount-input-main-row", children: [
     u && /* @__PURE__ */ f.jsx("div", { className: "amount-input-label", children: u }),
     /* @__PURE__ */ f.jsx(
@@ -659,62 +660,63 @@ const br = ({
       {
         onChange: P,
         type: "number",
-        placeholder: h,
+        placeholder: m,
         style: F,
         inputMode: "decimal",
-        ref: p
+        ref: h
       }
     ),
-    m && /* @__PURE__ */ f.jsx("div", { className: "amount-input-units", children: m })
+    p && /* @__PURE__ */ f.jsx("div", { className: "amount-input-units", children: p })
   ] }) });
 };
 const yr = ({
   type: o,
   size: s,
   color: v,
-  className: h,
+  className: m,
   children: u,
   onClick: y,
-  disabled: m
+  disabled: p
 }) => {
   const n = s ? s + "px" : "auto", l = u ? void 0 : n, T = (x) => {
-    m || y(x);
-  }, p = {
+    p || y(x);
+  }, h = {
     width: s ? l : "",
     height: s ? n : "",
     color: v && (o === "outline" ? v : ""),
     background: v && (o !== "outline" ? v : ""),
     borderColor: v
-  }, _ = k({ "custom-button": !0, [o]: o, [v]: v, [h]: h });
-  return /* @__PURE__ */ f.jsx("button", { className: _, onClick: T, style: p, disabled: m, children: u });
+  }, _ = k({ "teleaps-custom-button": !0, [o]: o, [v]: v, [m]: m });
+  return /* @__PURE__ */ f.jsx("button", { className: _, onClick: T, style: h, disabled: p, children: u });
 };
 const Er = ({
   text: o,
   className: s,
   checked: v,
-  valueSetter: h,
+  valueSetter: m,
   rounded: u
 }) => {
-  const y = Q(null), m = dr(6), n = () => {
-    h(y.current.checked);
-  }, l = k({ "custom-checkbox-container": !0, "no-text": !o, [s]: s, rounded: u });
+  const y = Q(null), p = dr(6), n = () => {
+    m(y.current.checked);
+  }, l = k({ "teleaps-custom-checkbox": !0, "no-text": !o, [s]: s, rounded: u });
   return /* @__PURE__ */ f.jsxs("div", { className: l, children: [
     /* @__PURE__ */ f.jsx(
       "input",
       {
         type: "checkbox",
         className: "custom-checkbox",
-        id: m,
+        id: p,
         onChange: n,
         ref: y,
-        checked: v
+        checked: v,
+        name: p
       }
     ),
-    /* @__PURE__ */ f.jsx("label", { htmlFor: m, children: o })
+    /* @__PURE__ */ f.jsx("label", { htmlFor: p, children: o })
   ] });
 };
-const Rr = ({ values: o, valueSetter: s, className: v, lineColor: h }) => {
-  const u = o.filter((E) => E.selected === !0).length, y = u - 1, m = Q(null), n = (E) => {
+const Rr = ({ values: o, valueSetter: s, className: v, lineColor: m }) => {
+  const u = o.filter((E) => E.selected === !0).length, y = u - 1, p = Q(null), n = (E) => {
     if (E === u)
       return;
     const R = o.map((W, Y) => {
@@ -724,7 +726,7 @@ const Rr = ({ values: o, valueSetter: s, className: v, lineColor: h }) => {
         return { ...W, selected: !1 };
     });
     s(R);
-  }, [l, T] = V(0), [p, _] = V(0), [x, P] = V(0), D = (E) => {
+  }, [l, T] = V(0), [h, _] = V(0), [x, P] = V(0), D = (E) => {
     if ("TouchEvent" in window && E.nativeEvent instanceof TouchEvent)
       return E.nativeEvent.touches[0].clientX;
     if (E.nativeEvent instanceof MouseEvent)
@@ -732,15 +734,15 @@ const Rr = ({ values: o, valueSetter: s, className: v, lineColor: h }) => {
   }, A = (E) => {
     _(void 0), T(D(E));
   }, F = (E) => _(D(E)), j = () => {
-    if (!l || !p)
+    if (!l || !h)
       return;
-    const R = ~~((p - l) / x), W = R > 0 ? u + R >= o.length ? o.length : R : u - R <= 0 ? 0 : R;
+    const R = ~~((h - l) / x), W = R > 0 ? u + R >= o.length ? o.length : R : u - R <= 0 ? 0 : R;
     n(u + W);
-  }, g = k({ "dots-slider": !0, [v]: v });
+  }, g = k({ "teleaps-dots-slider": !0, [v]: v });
   let I = {};
-  return h && (I.background = h), Ie(() => {
-    m.current && P(m.current.offsetWidth / o.length);
-  }, [m.current]), /* @__PURE__ */ f.jsx(
+  return m && (I.background = m), Ie(() => {
+    p.current && P(p.current.offsetWidth / o.length);
+  }, [p.current]), /* @__PURE__ */ f.jsx(
     "div",
     {
       className: g,
@@ -750,7 +752,7 @@ const Rr = ({ values: o, valueSetter: s, className: v, lineColor: h }) => {
       onMouseMove: F,
       onTouchEnd: j,
       onMouseUp: j,
-      ref: m,
+      ref: p,
       children: o.map((E, R) => {
         const W = k({ "dots-slider-point": !0, "active-dot": E.selected, "current-dot": R === u }), Y = k({ "dots-slider-line": !0, "active-line": R <= y }), ee = R < o.length - 1;
         return /* @__PURE__ */ f.jsxs("div", { onClick: () => n(R), children: [
@@ -761,26 +763,26 @@ const Rr = ({ values: o, valueSetter: s, className: v, lineColor: h }) => {
     }
   );
 };
-const _r = () => /* @__PURE__ */ f.jsx("div", { className: "spinner-container", children: /* @__PURE__ */ f.jsx("div", { className: "spinner" }) });
+const _r = () => /* @__PURE__ */ f.jsx("div", { className: "teleaps-spinner-container", children: /* @__PURE__ */ f.jsx("div", { className: "spinner" }) });
 const Cr = ({
   size: o,
   color: s,
   backgroundColor: v,
-  className: h,
+  className: m,
   completed: u
 }) => {
-  const y = k({ "progress-bar": !0, [h]: h }), m = {
+  const y = k({ "teleaps-progress-bar": !0, [m]: m }), p = {
     background: v || ""
   }, n = {
     padding: o ? `${o}px` : "2px",
     background: s || "",
     width: "0"
   };
-  return We(u) && (u > 100 ? n.width = "100%" : u < 0 ? n.width = "0" : n.width = u + "%"), /* @__PURE__ */ f.jsx("div", { className: y, children: /* @__PURE__ */ f.jsx("div", { className: "bar-background", style: m, children: /* @__PURE__ */ f.jsx("span", { className: "completed-progress", style: n }) }) });
+  return We(u) && (u > 100 ? n.width = "100%" : u < 0 ? n.width = "0" : n.width = u + "%"), /* @__PURE__ */ f.jsx("div", { className: y, children: /* @__PURE__ */ f.jsx("div", { className: "bar-background", style: p, children: /* @__PURE__ */ f.jsx("span", { className: "completed-progress", style: n }) }) });
 };
-const wr = ({ className: o, step: s, lineColor: v, value: h, valueSetter: u, min: y, max: m }) => {
-  const n = Q(null), l = k({ "range-slider": !0, [o]: o }), T = () => {
-    const p = n == null ? void 0 : n.current, _ = parseFloat(p.value);
+const wr = ({ className: o, step: s, lineColor: v, value: m, valueSetter: u, min: y, max: p }) => {
+  const n = Q(null), l = k({ "teleaps-range-slider": !0, [o]: o }), T = () => {
+    const h = n == null ? void 0 : n.current, _ = parseFloat(h.value);
     u(_);
   };
   return /* @__PURE__ */ f.jsx("div", { className: l, children: /* @__PURE__ */ f.jsx(
@@ -789,11 +791,11 @@ const wr = ({ className: o, step: s, lineColor: v, value: h, valueSetter: u, min
       type: "range",
       step: s,
       style: { backgroundColor: v },
-      value: h,
+      value: m,
       ref: n,
       onChange: T,
       min: y,
-      max: m
+      max: p
     }
   ) });
 };
@@ -801,24 +803,24 @@ const Tr = ({
   className: o,
   value: s,
   valueSetter: v,
-  type: h,
+  type: m,
   placeholder: u,
   label: y,
-  inputStyle: m,
+  inputStyle: p,
   max: n,
   borderColor: l
 }) => {
-  const [T, p] = V(!1), [_, x] = V(!1), P = h === "number", D = (I) => {
+  const [T, h] = V(!1), [_, x] = V(!1), P = m === "number", D = (I) => {
     const E = I.currentTarget.value;
     let R;
     if (P) {
       if (R = parseInt(E, 10), !R)
         return;
-      n && R > n && (R = n, p(!0));
+      n && R > n && (R = n, h(!0));
     } else
       R = String(I.currentTarget.value);
     v(R);
-  }, A = () => x(!0), F = () => x(!1), j = k({ "simple-input-container": !0, [o]: o, unacceptable: T }), g = { ...m };
+  }, A = () => x(!0), F = () => x(!1), j = k({ "teleaps-simple-input": !0, [o]: o, unacceptable: T }), g = { ...p };
   return T && g.color && delete g.color, /* @__PURE__ */ f.jsxs("div", { className: j, children: [
     /* @__PURE__ */ f.jsxs("div", { className: "simple-input-main-row", children: [
       y && /* @__PURE__ */ f.jsx("div", { className: "simple-input-label", children: y }),
@@ -827,7 +829,7 @@ const Tr = ({
         {
           value: s ?? "",
           onChange: D,
-          type: h,
+          type: m,
           placeholder: u,
           style: g,
           inputMode: P ? "decimal" : void 0,
@@ -843,27 +845,27 @@ const xr = ({
   className: o,
   selected: s,
   switchHandler: v,
-  activeColor: h,
+  activeColor: m,
   defaultColor: u
 }) => {
-  const y = k({ "custom-switch": !0, [o]: o }), m = k({ "switch-background": !0, "no-select": !0 }), n = k({ "switch-punkt-selected": s, "switch-punkt": !s }), l = s ? h : u;
-  return /* @__PURE__ */ f.jsx("div", { className: y, onClick: v, children: /* @__PURE__ */ f.jsx("div", { className: m, style: { background: l }, children: /* @__PURE__ */ f.jsx("div", { className: n, style: { borderColor: h }, children: " " }) }) });
+  const y = k({ "teleaps-custom-switch": !0, [o]: o }), p = k({ "switch-background": !0, "no-select": !0 }), n = k({ "switch-punkt-selected": s, "switch-punkt": !s }), l = s ? m : u;
+  return /* @__PURE__ */ f.jsx("div", { className: y, onClick: v, children: /* @__PURE__ */ f.jsx("div", { className: p, style: { background: l }, children: /* @__PURE__ */ f.jsx("div", { className: n, style: { borderColor: m }, children: " " }) }) });
 };
 const jr = ({ tabs: o, defaultIndex: s }) => {
-  const [v, h] = V(o[s ?? 0].caption), u = o.map(
+  const [v, m] = V(o[s ?? 0].caption), u = o.map(
     (n) => /* @__PURE__ */ f.jsx(
       "div",
       {
         className: k({ "current-tab": n.caption === v, "tab-caption": !0 }),
-        onClick: () => h(n.caption),
+        onClick: () => m(n.caption),
         children: n.caption
       },
       `${n.caption}-caption-key`
     )
-  ), y = o.find((n) => n.caption === v), m = y ? y.content : o[0].content;
-  return /* @__PURE__ */ f.jsxs("div", { className: "tabs-container", children: [
+  ), y = o.find((n) => n.caption === v), p = y ? y.content : o[0].content;
+  return /* @__PURE__ */ f.jsxs("div", { className: "teleaps-tabs-container", children: [
     /* @__PURE__ */ f.jsx("div", { className: "tabs-captions", children: u }),
-    m
+    p
   ] });
 };
 export {
