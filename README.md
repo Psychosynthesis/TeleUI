@@ -13,9 +13,6 @@ You can [suggest your improvements](https://github.com/Psychosynthesis/Teleapsty
 First add the library package with npm: \
 `npm i teleapstyle`
 
-Next, you need to import styles from package (place this in top of your main(.jsx|.tsx) file): \
-`import '/node_modules/teleapstyle/build/style.css';`
-
 For use in your applications, simply import all the functions from the library: \
 `import * as Components from 'teleapstyle';`
 
