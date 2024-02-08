@@ -8,3 +8,4 @@ export { Range } from './components/Range/Range';
 export { SimpleInput } from './components/SimpleInput/SimpleInput';
 export { Switch } from './components/Switch/Switch';
 export { Tabs } from './components/Tabs/Tabs';
+export type { OptionType, Color, RGB, RGBA, HEX } from './types.ts';
