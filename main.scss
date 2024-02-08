@@ -13,6 +13,22 @@
 html, body { margin: 0; max-width: 100%; }
 body { background-color: $defaultThemeBackground; }
 
+a, a:link, a:visited {
+  color: $defaultThemeAccent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:hover {
+  color: $defaultThemeAccentDark;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:active {
+  color: $defaultThemeAccentLight;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .component-row {
   margin-bottom: 30px;
 }

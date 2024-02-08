@@ -2,7 +2,6 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 
 import * as Components from 'teleapstyle';
-
 import './main.scss';
 
 const container = document.getElementById('main-node');
@@ -10,6 +9,8 @@ const useState = React.useState;
 
 const Guide = () => {
   const [amountInputVal, setAmountInputVal] = useState(null);
+  const [switchState, setSwitchState] = useState(true);
+
 
   return (
     <div>
@@ -40,9 +41,8 @@ const Guide = () => {
       <br />
       <div className="component-row">
         <h3>AmountInput</h3>
-        You can see a similar-looking component in the official
-        <a href="https://t.me/wallet" target="_blank" rel="noopener noreferrer">@Wallet</a> bot (for example,
-        when replenishing or entering the purchase amount). We've added an optional signature to the left.
+        You can see a similar-looking component in the official <a href="https://t.me/wallet" target="_blank" rel="noopener noreferrer">@Wallet</a> bot
+        (for example, when replenishing or entering the purchase amount). We've added an optional signature to the left.
         This component is used only for numeric input, for others use SimpleInput component.
         <br /><br />
         <div className="component-tips-label">Demo:</div>
@@ -57,7 +57,10 @@ const Guide = () => {
         />
         <div className="component-tips-label">Code:</div>
         <pre>
-          {`<AmountInput
+          {`
+            const [amountInputVal, setAmountInputVal] = useState(null);
+            // ...
+            <AmountInput
             value={amountInputVal}
             valueSetter={setAmountInputVal}
             placeholder="0"
@@ -68,11 +71,10 @@ const Guide = () => {
           />`}
         </pre>
       </div>
+
       <div className="component-row">
         <h3>Button</h3>
         This is just a button. No, really.
-        May have an icon (see the Sprite section for available icons).
-        But if the button is too small, the icon will not be displayed.
         You can pass a child element, such as a link or your own icon.
         <br /><br />
         <div className="component-tips-label">Demo:</div>
@@ -83,10 +85,9 @@ const Guide = () => {
 
           <Components.Button
             onClick={() => {}}
-            icon="mask"
-            color="#f455ee"
+            color="#2f6ea5"
           >
-            Button with Icon & color
+            <img src="/icon.png" /> Button with child & color
           </Components.Button>
 
           <Components.Button
@@ -103,11 +104,39 @@ const Guide = () => {
           {`<Button onClick={clickHandler}>Just Button</Button>`}
         </pre>
         <pre>
-          {`<Button onClick={clickHandler} icon="mask" color="#f455ee">Button with Icon</Button>`}
+          {`<Button onClick={() => {}} color="#2f6ea5"><img src="/icon.png" /> Button with child & color</Button>`}
         </pre>
         <pre>
           {`<Button onClick={clickHandler} type="outline" size={14} color="#ffffff">Button with Icon</Button>`}
         </pre>
+
+        <div className="component-row">
+          <h3>Switch</h3>
+          Switch-like select
+          <br /><br />
+          <div className="component-tips-label">Demo:</div>
+          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <Components.Switch selected={switchState} switchHandler={setSwitchState} />
+          </div>
+          <div className="component-tips-label">Code:</div>
+          <pre>
+            {`<Components.Switch selected={switchState} switchHandler={setSwitchState} />`}
+          </pre>
+        </div>
+
+        <div className="component-row">
+          <h3>Loader</h3>
+          Just a simplest spinner
+          <br /><br />
+          <div className="component-tips-label">Demo:</div>
+          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <Components.Loader />
+          </div>
+          <div className="component-tips-label">Code:</div>
+          <pre>
+            {`<Components.Loader />`}
+          </pre>
+        </div>
       </div>
     </div>
   )
