@@ -2,7 +2,7 @@
   "name": "teleapstyle",
   "author": "Nick G.",
   "license": "MIT",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A small library of components for creating mini-applications in the Telegram ecosystem",
   "main": "./build/teleapstyle.umd.cjs",
   "types": "./build/index.d.ts",
