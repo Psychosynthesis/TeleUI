@@ -28,9 +28,9 @@ export default defineConfig(({ mode }) => {
         fileName: 'teleapstyle'
       },
       rollupOptions: {
-        external: ['clsx', 'react', 'vanicom'],
+        external: ['react', 'vanicom'],
         output: {
-          globals: { clsx: 'clsx', react: 'React', vanicom: 'Vanicom' }
+          globals: { react: 'React', vanicom: 'Vanicom' }
         }
       }
     },
