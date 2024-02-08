@@ -1,9 +1,6 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import ViteCSSExportPlugin from 'vite-plugin-css-export';
-
-import { version } from './package.json';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -16,14 +13,11 @@ export default defineConfig(({ mode }) => {
     },
     // logLevel: mode === 'production' ? 'silent' : 'warn',
     // clearScreen: mode === 'production',
-    plugins: [react(), ViteCSSExportPlugin()],
+    plugins: [ react() ],
     build: {
       assetsDir: '', // Place all assets in root
       assetsInlineLimit: 1024, // Smaller resources will be embedded as base64
       sourcemap: false,
-    },
-    define: {
-      __APP_VERSION__: JSON.stringify(version),
     },
     resolve: {
       alias: {

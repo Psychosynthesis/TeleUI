@@ -12,3 +12,14 @@
 
 html, body { margin: 0; max-width: 100%; }
 body { background-color: $defaultThemeBackground; }
+
+.component-row {
+  margin-bottom: 30px;
+}
+
+.component-tips-label {
+  font-weight: bold;
+  font-size: 85%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
