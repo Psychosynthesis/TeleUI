@@ -4,6 +4,10 @@
   "description": "Web guide for Teleapstyle lib",
   "main": "src/index.ts",
   "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psychosynthesis/Teleapstyle.git"
+  },
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build",
