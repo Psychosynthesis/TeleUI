@@ -16,6 +16,7 @@
   "author": "Nick G.",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "latest",
     "teleapstyle": "latest"
   },
   "devDependencies": {

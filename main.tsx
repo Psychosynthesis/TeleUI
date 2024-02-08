@@ -11,7 +11,6 @@ const Guide = () => {
   const [amountInputVal, setAmountInputVal] = useState(null);
   const [switchState, setSwitchState] = useState(true);
 
-
   return (
     <div>
       <h2>Teleapstyle Guide</h2>
@@ -58,9 +57,11 @@ const Guide = () => {
         <div className="component-tips-label">Code:</div>
         <pre>
           {`
-            const [amountInputVal, setAmountInputVal] = useState(null);
-            // ...
-            <AmountInput
+        const [amountInputVal, setAmountInputVal] = useState(null);
+
+        // ...
+
+        <AmountInput
             value={amountInputVal}
             valueSetter={setAmountInputVal}
             placeholder="0"
@@ -68,7 +69,7 @@ const Guide = () => {
             units="%"
             inputStyle={{ color: '#fff' }}
             max={100}
-          />`}
+        />`}
         </pre>
       </div>
 
@@ -109,35 +110,45 @@ const Guide = () => {
         <pre>
           {`<Button onClick={clickHandler} type="outline" size={14} color="#ffffff">Button with Icon</Button>`}
         </pre>
-
-        <div className="component-row">
-          <h3>Switch</h3>
-          Switch-like select
-          <br /><br />
-          <div className="component-tips-label">Demo:</div>
-          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-            <Components.Switch selected={switchState} switchHandler={setSwitchState} />
-          </div>
-          <div className="component-tips-label">Code:</div>
-          <pre>
-            {`<Components.Switch selected={switchState} switchHandler={setSwitchState} />`}
-          </pre>
-        </div>
-
-        <div className="component-row">
-          <h3>Loader</h3>
-          Just a simplest spinner
-          <br /><br />
-          <div className="component-tips-label">Demo:</div>
-          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-            <Components.Loader />
-          </div>
-          <div className="component-tips-label">Code:</div>
-          <pre>
-            {`<Components.Loader />`}
-          </pre>
-        </div>
       </div>
+
+      <div className="component-row">
+        <h3>Switch</h3>
+        Switch-like select
+        <br /><br />
+        <div className="component-tips-label">Demo:</div>
+        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+          <Components.Switch
+            selected={switchState}
+            switchHandler={() => setSwitchState(!switchState)}
+            activeColor="#50a7ea"
+            defaultColor="#bbb" />
+        </div>
+        <div className="component-tips-label">Code:</div>
+        <pre>
+          {`
+        <Switch
+            selected={switchState}
+            switchHandler={() => setSwitchState(!switchState)}
+            activeColor="#50a7ea"
+            defaultColor="#bbb" />`}
+        </pre>
+      </div>
+
+      <div className="component-row">
+        <h3>Loader</h3>
+        Just a simplest spinner
+        <br /><br />
+        <div className="component-tips-label">Demo:</div>
+        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+          <Components.Loader />
+        </div>
+        <div className="component-tips-label">Code:</div>
+        <pre>
+          {`<Components.Loader />`}
+        </pre>
+      </div>
+
     </div>
   )
 }
