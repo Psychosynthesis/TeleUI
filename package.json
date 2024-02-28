@@ -19,6 +19,7 @@
   },
   "type": "module",
   "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
+  "funding": "https://psychosynthesis.github.io/Teleapstyle/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Psychosynthesis/Teleapstyle.git"
