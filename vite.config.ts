@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   const isProd = mode === 'production';
   return {
-    base: isProd ? 'https://psychosynthesis.github.io/Teleapstyle/' : '',
+    base: isProd ? 'https://psychosynthesis.github.io/TeleUI/' : '',
     envDir: path.resolve(__dirname, './envs'),
     esbuild: {
       pure: isProd ? ['console.log'] : [],

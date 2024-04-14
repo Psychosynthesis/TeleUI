@@ -1,12 +1,12 @@
 {
-  "name": "teleapstyle-guide",
+  "name": "teleui-guide",
   "version": "0.0.0",
-  "description": "Web guide for Teleapstyle lib",
-  "main": "src/index.ts",
-  "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
+  "description": "Web guide for TeleUI lib",
+  "main": "./main.tsx",
+  "homepage": "https://psychosynthesis.github.io/TeleUI/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Psychosynthesis/Teleapstyle.git"
+    "url": "git+https://github.com/Psychosynthesis/TeleUI.git"
   },
   "scripts": {
     "dev": "vite --host",

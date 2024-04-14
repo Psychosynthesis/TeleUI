@@ -13,7 +13,7 @@ const Guide = () => {
 
   return (
     <div>
-      <h2>Teleapstyle Guide</h2>
+      <h2>TeleUI Guide</h2>
       Teleapstyle is a lightweight components lib to easy build your Telegram mini-apps.
       The main idea of Teleapstyle is to create a simple and minimalistic component library that
       would look as close as possible to the native design of Telegram Mini Apps.
@@ -23,7 +23,7 @@ const Guide = () => {
       if vars changed in initData, due to TMA.js development), instead you can pass it to the components that
       support color-parameter, or just pass your own class.
       <br /><br />
-      You can <a target="_blank" rel="noopener noreferrer" href="https://github.com/Psychosynthesis/Teleapstyle">suggest your improvements</a>, we will definitely consider them.
+      You can <a target="_blank" rel="noopener noreferrer" href="https://github.com/Psychosynthesis/TeleUI">suggest your improvements</a>, we will definitely consider them.
 
       <h3>Usage</h3>
       First add the library package with npm:<br />
