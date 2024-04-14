@@ -1,4 +1,4 @@
-# This is dev branch of teleapstyle
+# This is dev branch of teleui
 
 ## Purpose of branches
  1. `dev` — main development branch. The build is being made in this branch and here are the priority versions of the components.

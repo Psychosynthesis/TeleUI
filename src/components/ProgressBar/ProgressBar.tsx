@@ -8,7 +8,7 @@ import type { ProgressBarProps }  from './types';
 export const ProgressBar: React.FC<ProgressBarProps> = ({
 	size, color, backgroundColor, className, completed
 }) => {
-  const containerClass = clsx({ 'teleaps-progress-bar': true, [className!]: className });
+  const containerClass = clsx({ 'teleuiprogress-bar': true, [className!]: className });
   const backStyle = {
     background: backgroundColor ? backgroundColor : '',
   };

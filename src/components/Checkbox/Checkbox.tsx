@@ -16,7 +16,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 		valueSetter(checkboxRef.current.checked);
 	}
 
-	const containerClass = clsx({ 'teleaps-custom-checkbox': true, 'no-text': !text, [className!]: className, 'rounded': rounded });
+	const containerClass = clsx({ 'teleuicustom-checkbox': true, 'no-text': !text, [className!]: className, 'rounded': rounded });
 
 	return (
 		<div className={containerClass}>

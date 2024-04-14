@@ -33,14 +33,14 @@ const Guide = () => {
             You can <a target="_blank" rel="noopener noreferrer" href="https://github.com/Psychosynthesis/TeleUI">suggest your improvements</a>, we will definitely consider them.
             <h2><a id="about-usage">Usage</a></h2>
             First add the library package with npm:<br />
-            <pre>npm i teleapstyle</pre>
+            <pre>npm i teleui</pre>
             <br /><br />
             You can simply import all the functions from the library:<br />
-            <pre>import * as Components from 'teleapstyle';</pre>
+            <pre>import * as Components from 'teleui';</pre>
             <pre>{`<Components.AmountInput ... /> // In this case you can use it like this`}</pre>
             <br /><br />
             Or just import only neccessary:
-            <pre>{`import { AmountInput, Button } from 'teleapstyle';`}</pre>
+            <pre>{`import { AmountInput, Button } from 'teleui';`}</pre>
             <br /><br />
             <hr />
             <br />

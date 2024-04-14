@@ -54,7 +54,7 @@ export const DotSlider: React.FC<DotSliderProps> = ({ values, valueSetter, class
 		dotClick(currentDot + dotsToSwipe);
 	}
 
-	const mainClass = clsx({ 'teleaps-dots-slider': true, [className!]: className });
+	const mainClass = clsx({ 'teleuidots-slider': true, [className!]: className });
 	let lineStyle: React.CSSProperties = {};
 	if (lineColor) { lineStyle.background = lineColor; }
 

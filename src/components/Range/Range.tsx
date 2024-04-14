@@ -7,7 +7,7 @@ import type { RangeProps }  from './types';
 export const Range: React.FC<RangeProps> = ({ className, step, lineColor, value, valueSetter, min, max, }) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const mainClass = clsx({ 'teleaps-range-slider': true, [className!]: className });
+  const mainClass = clsx({ 'teleuirange-slider': true, [className!]: className });
   const handeChange = () => {
     const refBlock = inputRef?.current;
     const newVal = parseFloat(refBlock!.value);

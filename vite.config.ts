@@ -28,9 +28,9 @@ export default defineConfig(({ mode }) => {
         fileName: 'teleui'
       },
       rollupOptions: {
-        external: ['react', 'vanicom'],
+        external: [ 'react' ],
         output: {
-          globals: { react: 'React', vanicom: 'Vanicom' }
+          globals: { react: 'react' }
         }
       }
     },
