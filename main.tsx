@@ -88,7 +88,7 @@ const Guide = () => {
             onClick={() => {}}
             color="#2f6ea5"
           >
-            <img src="/icon.png" /> Button with child & color
+            <img src="https://psychosynthesis.github.io/TeleUI/icon.png" /> Button with child & color
           </Components.Button>
 
           <Components.Button
@@ -105,10 +105,10 @@ const Guide = () => {
           {`<Button onClick={clickHandler}>Just Button</Button>`}
         </pre>
         <pre>
-          {`<Button onClick={() => {}} color="#2f6ea5"><img src="/icon.png" /> Button with child & color</Button>`}
+          {`<Button onClick={clickHandler} color="#2f6ea5"><img src="https://psychosynthesis.github.io/TeleUI/icon.png" /> Button with child & color</Button>`}
         </pre>
         <pre>
-          {`<Button onClick={clickHandler} type="outline" size={14} color="#ffffff">Button with Icon</Button>`}
+          {`<Button onClick={clickHandler} type="outline" size={14} color="#ffffff">Small outline Button</Button>`}
         </pre>
       </div>
 
@@ -128,8 +128,8 @@ const Guide = () => {
         <pre>
           {`
         <Switch
-            selected={switchState}
-            switchHandler={() => setSwitchState(!switchState)}
+            selected={switchState} // boolean
+            switchHandler={() => setSwitchState(!switchState)} // () => {}
             activeColor="#50a7ea"
             defaultColor="#bbb" />`}
         </pre>
