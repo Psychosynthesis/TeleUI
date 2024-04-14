@@ -2,7 +2,7 @@
   "name": "teleui",
   "author": "Nick G.",
   "license": "MIT",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "A small library of components for creating mini-applications in the Telegram ecosystem",
   "main": "./build/teleui.umd.cjs",
   "types": "./build/index.d.ts",
@@ -29,8 +29,9 @@
     "syncw": "del /s /q build && git checkout dev build/",
     "syncl": "rm -R build/ && git checkout dev build/"
   },
-  "keywords": [ "telegram", "components" ],
+  "keywords": [ "telegram", "components", "ui", "tma", "framework" ],
   "dependencies": {
+    "clsx": "^2.0.0",
     "react": "~18.2.0",
     "react-dom": "~18.2.0",
     "vanicom": "^1.1.1"
