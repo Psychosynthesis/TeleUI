@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="24x24" href="/icon.png">
+    <link rel="shortcut icon" sizes="24x24" href="/icon.png" />
+    <title>TeleUI Guide</title>
+    <style>
+    :root {
+        font-family: Helvetica, Arial, sans-serif;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    html, body { margin: 0; max-width: 100%; background: #333; color: #e0e0e0;  }
+    body { min-width: 320px; min-height: 100vh; }
+
+    h3 {
+        color: #4f84ea;
+    }
+
+    #main-node {
+        margin: 0 auto;
+        overflow-x: hidden;
+        min-height: 100vh; /* remove this to make pages not full-height */
+        max-width: 640px;
+    }
+
+    .component-row {
+        margin-bottom: 30px;
+    }
+
+    .components-divider {
+        font-size: 150%;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .component-tips-label {
+        font-weight: bold;
+        font-size: 85%;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="main-node"></div>
+    <script type="module" src="/guide.tsx"></script>
+</body>
+</html>
