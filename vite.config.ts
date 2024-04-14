@@ -24,8 +24,8 @@ export default defineConfig(({ mode }) => {
       // emptyOutDir: false, // avoid vite build deleting content of outDir
       lib: {
         entry: resolve(__dirname, './src/index.ts'),
-        name: 'Teleapstyle',
-        fileName: 'teleapstyle'
+        name: 'TeleUI',
+        fileName: 'teleui'
       },
       rollupOptions: {
         external: ['react', 'vanicom'],

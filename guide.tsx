@@ -2,7 +2,6 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 
 import * as Components from './src';
-import './src/main.scss';
 
 const container = document.getElementById('main-node');
 const useState = React.useState;
