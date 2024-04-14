@@ -23,9 +23,12 @@
     height: 6px;
     border-radius: 50%;
     margin: 0 4px;
+    filter: grayscale(50%);
     background: $defaultThemeHintText;
 
     &.active-dot {
+      filter: none;
+
       background: $defaultThemeAccent;
     }
 
@@ -54,9 +57,11 @@
   .dots-slider-line {
     height: 2px;
     flex-grow: 1;
+    filter: grayscale(70%);
     background: $defaultThemeHintText;
 
     &.active-line {
+      filter: none;
       background: $defaultThemeAccent;
     }
   }

@@ -38,7 +38,7 @@ export const AmountInput: React.FC<AmountInputProps> = ({
 	}
 
 	const mainClass = clsx({ 'teleaps-amount-input': true, [className!]: className, 'unacceptable': inputError });
-	const newWidth = isExistAndNotNull(value) ? ((String(value).length * 19) + 2 + 'px') : '25px';
+	const newWidth = isExistAndNotNull(value) ? ((String(value).length * 20) + 5 + 'px') : '25px';
 	const inputStylesCasted = { ...inputStyle, width: newWidth }
 	if (inputError && inputStylesCasted.color) delete inputStylesCasted.color;
 

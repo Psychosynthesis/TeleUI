@@ -1,4 +1,4 @@
-(function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode('@charset "UTF-8";.teleaps-amount-input{min-height:24px;max-width:100%;padding-left:0}.teleaps-amount-input.unacceptable input{color:#cc2929}.teleaps-amount-input .amount-input-main-row{display:flex;align-items:baseline}.teleaps-amount-input .amount-input-main-row input{font-family:Roboto;font-size:36px;font-weight:500;background:none;border:none;margin:0;padding:0;line-height:20px;max-width:100%!important}.teleaps-amount-input .amount-input-main-row input[type=number]::-webkit-outer-spin-button,.teleaps-amount-input .amount-input-main-row input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}.teleaps-amount-input .amount-input-main-row input[type=number],.teleaps-amount-input .amount-input-main-row input[type=number]:hover,.teleaps-amount-input .amount-input-main-row input[type=number]:focus{-webkit-appearance:none;appearance:none;-moz-appearance:textfield}.teleaps-amount-input .amount-input-main-row input:focus{outline:none}.teleaps-amount-input .amount-input-main-row input ::placeholder{color:#00f;font-size:26px}.teleaps-amount-input .amount-input-main-row .amount-input-label{color:#7f8c97;margin-right:5px;display:inline-flex;align-items:flex-end;-webkit-user-select:none;user-select:none}.teleaps-amount-input .amount-input-main-row .amount-input-units{display:flex;align-items:flex-end;color:#7f8c97;-webkit-user-select:none;user-select:none}.teleaps-amount-input .amount-input-underline{height:1px;margin-top:8px;border-bottom:1px solid #7f8c97}.teleaps-custom-button{padding:8px;max-height:48px;border-radius:4px;cursor:pointer;white-space:break-spaces;font-style:normal;font-family:Roboto Bold;display:inline-flex;align-items:center;justify-content:center;border:1px solid #50a7ea;color:#fff;background:#50a7ea}.teleaps-custom-button:hover{border-color:#fff!important}.teleaps-custom-button:disabled{opacity:.3}.teleaps-custom-button.outline{background:none;box-shadow:none;color:#50a7ea}.teleaps-custom-checkbox{display:flex;text-align:center}.teleaps-custom-checkbox .custom-checkbox{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:none;line-height:20px}.teleaps-custom-checkbox .custom-checkbox+label{display:inline-flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;line-height:20px}.teleaps-custom-checkbox.no-text .custom-checkbox+label:before{margin-right:0}.teleaps-custom-checkbox.rounded .custom-checkbox+label:before{border-radius:50%}.teleaps-custom-checkbox .custom-checkbox+label:before{content:"";margin-right:12px;display:inline-block;flex-shrink:0;flex-grow:0;border:1px solid #7f8c97;border-radius:4px;background:none;font-size:15px;line-height:20px;cursor:pointer;width:20px;height:20px}.teleaps-custom-checkbox .custom-checkbox:checked+label:before{width:20px;height:20px;line-height:20px;content:"✓ ";color:#fff;background-color:#50a7ea;border-color:transparent}.teleaps-dots-slider{display:flex;height:11px;padding-top:24px;padding-bottom:8px}.teleaps-dots-slider>div{flex-grow:1;display:flex;align-items:center}.teleaps-dots-slider>div:last-child{flex-grow:0}.teleaps-dots-slider .dots-slider-point{width:6px;height:6px;border-radius:50%;margin:0 4px;background:#7f8c97}.teleaps-dots-slider .dots-slider-point.active-dot{background:#50a7ea}.teleaps-dots-slider .dots-slider-point.current-dot{width:11px;height:11px}.teleaps-dots-slider .dots-slider-point.current-dot .dots-slider-caption{bottom:24px;left:0}.teleaps-dots-slider .dots-slider-point .dots-slider-caption{font-size:12px;line-height:14px;position:relative;bottom:26px;color:#7f8c97;-webkit-user-select:none;user-select:none;width:20px;text-align:left}.teleaps-dots-slider .dots-slider-line{height:2px;flex-grow:1;background:#7f8c97}.teleaps-dots-slider .dots-slider-line.active-line{background:#50a7ea}.teleaps-spinner-container{width:100%;height:100vh;margin:0;display:flex;place-items:center;justify-content:center}.teleaps-spinner-container .spinner{height:50px;width:50px;border-left:3px solid #7f8c97;border-bottom:3px solid #7f8c97;border-right:3px solid #7f8c97;border-top:3px solid transparent;border-radius:50%;animation:spinner .8s linear infinite}@keyframes spinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.teleaps-progress-bar{overflow:hidden;width:100%}.teleaps-progress-bar .bar-background{display:block;background:#b0b9c2;border-radius:7px}.teleaps-progress-bar .bar-background .completed-progress{display:block;border-radius:7px;background:#50a7ea;padding:2px;width:0}.teleaps-range-slider input{height:5px;width:100%}.teleaps-range-slider input[type=range]{-webkit-appearance:none}.teleaps-range-slider input[type=range]:focus{outline:none}.teleaps-range-slider input[type=range]::-ms-track{width:100%;cursor:pointer;background:transparent;border-color:transparent;color:transparent}.teleaps-range-slider input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;border:3px solid #6ea0e6;background:#fff;height:24px;width:24px;border-radius:50%;cursor:pointer;margin-top:-6px}.teleaps-range-slider input[type=range]::-moz-range-thumb{border:3px solid #6ea0e6;background:#fff;height:24px;width:24px;border-radius:50%;cursor:pointer}.teleaps-range-slider input[type=range]::-webkit-slider-runnable-track{height:10px;cursor:pointer;background:#50a7ea;border-radius:4px}.teleaps-range-slider input[type=range]:focus::-webkit-slider-runnable-track{background:#50a7ea}.teleaps-range-slider input[type=range]::-moz-range-track{height:10px;cursor:pointer;background:#50a7ea;border-radius:4px}.teleaps-simple-input{min-height:24px;max-width:100%;padding-left:12px}.teleaps-simple-input.unacceptable input{color:#cc2929}.teleaps-simple-input .simple-input-main-row{display:flex;align-items:baseline}.teleaps-simple-input .simple-input-main-row input{font-family:Roboto;font-size:16px;font-weight:400;background:none;border:none;margin:0;padding:0;line-height:19px;max-width:100%!important}.teleaps-simple-input .simple-input-main-row input[type=number]::-webkit-outer-spin-button,.teleaps-simple-input .simple-input-main-row input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}.teleaps-simple-input .simple-input-main-row input[type=number],.teleaps-simple-input .simple-input-main-row input[type=number]:hover,.teleaps-simple-input .simple-input-main-row input[type=number]:focus{-webkit-appearance:none;appearance:none;-moz-appearance:textfield}.teleaps-simple-input .simple-input-main-row input:focus{outline:none}.teleaps-simple-input .simple-input-main-row .simple-input-label{color:#7f8c97;margin-right:5px;display:inline-flex;align-items:flex-end}.teleaps-simple-input .simple-input-main-row .simple-input-units{display:flex;align-items:flex-end;color:#7f8c97}.teleaps-simple-input .simple-input-underline{height:1px;margin-top:8px;border-bottom:1px solid #7f8c97}.teleaps-custom-switch{display:flex;align-items:center;height:20px}.teleaps-custom-switch .switch-background{width:30px;height:13px;border-radius:10px;cursor:pointer;display:flex;align-items:center}.teleaps-custom-switch .switch-punkt,.teleaps-custom-switch .switch-punkt-selected{width:20px;height:20px;position:relative;border:2px solid;border-radius:10px;box-sizing:border-box;background:#fff;-webkit-transition:left .4s;-moz-transition:left .4s;-o-transition:left .4s;-ms-transition:left .4s;transition:left .4s}.teleaps-custom-switch .switch-punkt{left:-15%}.teleaps-custom-switch .switch-punkt-selected{left:50%}.teleaps-tabs-container{padding-bottom:12px}.teleaps-tabs-container .tabs-captions{display:flex;flex-direction:row;justify-content:space-around}.teleaps-tabs-container .tabs-captions .tab-caption{font-family:Roboto;font-size:16px;font-weight:500;margin:12px 0 24px;color:#b0b9c2;-webkit-user-select:none;user-select:none;cursor:pointer}.teleaps-tabs-container .tabs-captions .tab-caption.current-tab{color:#50a7ea;border-bottom:3px solid #50a7ea;padding-bottom:12px}')),document.head.appendChild(e)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
+(function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode('@charset "UTF-8";.teleaps-amount-input{min-height:24px;max-width:100%;padding-left:0}.teleaps-amount-input.unacceptable input{color:#cc2929}.teleaps-amount-input .amount-input-main-row{display:flex;align-items:baseline}.teleaps-amount-input .amount-input-main-row input{font-family:Roboto;font-size:36px;font-weight:500;background:none;border:none;margin:0;padding:0;line-height:20px;max-width:100%!important}.teleaps-amount-input .amount-input-main-row input[type=number]::-webkit-outer-spin-button,.teleaps-amount-input .amount-input-main-row input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}.teleaps-amount-input .amount-input-main-row input[type=number],.teleaps-amount-input .amount-input-main-row input[type=number]:hover,.teleaps-amount-input .amount-input-main-row input[type=number]:focus{-webkit-appearance:none;appearance:none;-moz-appearance:textfield}.teleaps-amount-input .amount-input-main-row input:focus{outline:none}.teleaps-amount-input .amount-input-main-row input ::placeholder{color:#00f;font-size:26px}.teleaps-amount-input .amount-input-main-row .amount-input-label{color:#7f8c97;margin-right:5px;display:inline-flex;align-items:flex-end;-webkit-user-select:none;user-select:none}.teleaps-amount-input .amount-input-main-row .amount-input-units{display:flex;align-items:flex-end;color:#7f8c97;-webkit-user-select:none;user-select:none}.teleaps-amount-input .amount-input-underline{height:1px;margin-top:8px;border-bottom:1px solid #7f8c97}.teleaps-custom-button{padding:8px;max-height:48px;border-radius:4px;cursor:pointer;white-space:break-spaces;font-style:normal;font-family:Roboto Bold;display:inline-flex;align-items:center;justify-content:center;border:1px solid #50a7ea;color:#fff;background:#50a7ea}.teleaps-custom-button:hover{border-color:#fff!important}.teleaps-custom-button:disabled{opacity:.3}.teleaps-custom-button.outline{background:none;box-shadow:none;color:#50a7ea}.teleaps-custom-checkbox{display:flex;text-align:center}.teleaps-custom-checkbox .custom-checkbox{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:none;line-height:20px}.teleaps-custom-checkbox .custom-checkbox+label{display:inline-flex;align-items:center;-webkit-user-select:none;user-select:none;cursor:pointer;line-height:20px}.teleaps-custom-checkbox.no-text .custom-checkbox+label:before{margin-right:0}.teleaps-custom-checkbox.rounded .custom-checkbox+label:before{border-radius:50%}.teleaps-custom-checkbox .custom-checkbox+label:before{content:"";margin-right:12px;display:inline-block;flex-shrink:0;flex-grow:0;border:1px solid #7f8c97;border-radius:4px;background:none;font-size:20px;line-height:20px;cursor:pointer;width:20px;height:20px}.teleaps-custom-checkbox .custom-checkbox:checked+label:before{width:20px;height:20px;line-height:20px;content:"✓ ";color:#fff;background-color:#50a7ea;border-color:transparent}.teleaps-dots-slider{display:flex;height:11px;padding-top:24px;padding-bottom:8px}.teleaps-dots-slider>div{flex-grow:1;display:flex;align-items:center}.teleaps-dots-slider>div:last-child{flex-grow:0}.teleaps-dots-slider .dots-slider-point{width:6px;height:6px;border-radius:50%;margin:0 4px;filter:grayscale(50%);background:#7f8c97}.teleaps-dots-slider .dots-slider-point.active-dot{filter:none;background:#50a7ea}.teleaps-dots-slider .dots-slider-point.current-dot{width:11px;height:11px}.teleaps-dots-slider .dots-slider-point.current-dot .dots-slider-caption{bottom:24px;left:0}.teleaps-dots-slider .dots-slider-point .dots-slider-caption{font-size:12px;line-height:14px;position:relative;bottom:26px;color:#7f8c97;-webkit-user-select:none;user-select:none;width:20px;text-align:left}.teleaps-dots-slider .dots-slider-line{height:2px;flex-grow:1;filter:grayscale(70%);background:#7f8c97}.teleaps-dots-slider .dots-slider-line.active-line{filter:none;background:#50a7ea}.teleaps-spinner-container{width:100%;height:100%;margin:0;display:flex;place-items:center;justify-content:center}.teleaps-spinner-container .spinner{height:50px;width:50px;border-left:3px solid #7f8c97;border-bottom:3px solid #7f8c97;border-right:3px solid #7f8c97;border-top:3px solid transparent;border-radius:50%;animation:spinner .8s linear infinite}@keyframes spinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.teleaps-progress-bar{overflow:hidden;width:100%}.teleaps-progress-bar .bar-background{display:block;background:#b0b9c2;border-radius:7px}.teleaps-progress-bar .bar-background .completed-progress{display:block;border-radius:7px;background:#50a7ea;padding:2px;width:0}.teleaps-range-slider input{height:5px;width:100%;padding:0;margin:0}.teleaps-range-slider input[type=range]{-webkit-appearance:none}.teleaps-range-slider input[type=range]:focus{outline:none}.teleaps-range-slider input[type=range]::-ms-track{width:100%;cursor:pointer;background:transparent;border-color:transparent;color:transparent}.teleaps-range-slider input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;border:3px solid #6ea0e6;background:#fff;height:24px;width:24px;border-radius:50%;cursor:pointer;margin-top:-6px}.teleaps-range-slider input[type=range]::-moz-range-thumb{border:3px solid #6ea0e6;background:#fff;height:24px;width:24px;border-radius:50%;cursor:pointer}.teleaps-range-slider input[type=range]::-webkit-slider-runnable-track{height:10px;cursor:pointer;background:#50a7ea;border-radius:4px}.teleaps-range-slider input[type=range]:focus::-webkit-slider-runnable-track{background:#50a7ea}.teleaps-range-slider input[type=range]::-moz-range-track{height:10px;cursor:pointer;background:#50a7ea;border-radius:4px}.teleaps-simple-input{min-height:24px;max-width:100%;padding-left:12px}.teleaps-simple-input.unacceptable input{color:#cc2929}.teleaps-simple-input .simple-input-main-row{display:flex;align-items:baseline}.teleaps-simple-input .simple-input-main-row input{font-family:Roboto;font-size:16px;font-weight:400;background:none;border:none;margin:0;padding:0;line-height:19px;max-width:100%!important}.teleaps-simple-input .simple-input-main-row input[type=number]::-webkit-outer-spin-button,.teleaps-simple-input .simple-input-main-row input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}.teleaps-simple-input .simple-input-main-row input[type=number],.teleaps-simple-input .simple-input-main-row input[type=number]:hover,.teleaps-simple-input .simple-input-main-row input[type=number]:focus{-webkit-appearance:none;appearance:none;-moz-appearance:textfield}.teleaps-simple-input .simple-input-main-row input:focus{outline:none}.teleaps-simple-input .simple-input-main-row .simple-input-label{color:#7f8c97;margin-right:5px;display:inline-flex;align-items:flex-end}.teleaps-simple-input .simple-input-main-row .simple-input-units{display:flex;align-items:flex-end;color:#7f8c97}.teleaps-simple-input .simple-input-underline{height:1px;margin-top:8px;border-bottom:1px solid #7f8c97}.teleaps-custom-switch{display:flex;align-items:center;height:20px}.teleaps-custom-switch .switch-background{width:30px;height:13px;border-radius:10px;cursor:pointer;display:flex;align-items:center}.teleaps-custom-switch .switch-punkt,.teleaps-custom-switch .switch-punkt-selected{width:20px;height:20px;position:relative;border:2px solid;border-radius:10px;box-sizing:border-box;background:#fff;-webkit-transition:left .4s;-moz-transition:left .4s;-o-transition:left .4s;-ms-transition:left .4s;transition:left .4s}.teleaps-custom-switch .switch-punkt{left:-15%}.teleaps-custom-switch .switch-punkt-selected{left:50%}.teleaps-tabs-container{padding-bottom:12px;width:100%}.teleaps-tabs-container .tabs-captions{display:flex;flex-direction:row;justify-content:space-around}.teleaps-tabs-container .tabs-captions .tab-caption{font-family:Roboto;font-size:16px;font-weight:500;margin:12px 0 24px;color:#b0b9c2;-webkit-user-select:none;user-select:none;cursor:pointer}.teleaps-tabs-container .tabs-captions .tab-caption.current-tab{color:#50a7ea;border-bottom:3px solid #50a7ea;padding-bottom:12px}')),document.head.appendChild(e)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
 import $e, { useState as V, useRef as Q, useEffect as Ie } from "react";
 import { isExistAndNotNull as We, getRandomString as vr } from "vanicom";
 var ue = { exports: {} }, J = {};
@@ -16,16 +16,16 @@ function pr() {
   if (Ne)
     return J;
   Ne = 1;
-  var n = $e, i = Symbol.for("react.element"), c = Symbol.for("react.fragment"), s = Object.prototype.hasOwnProperty, u = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, y = { key: !0, ref: !0, __self: !0, __source: !0 };
+  var n = $e, o = Symbol.for("react.element"), c = Symbol.for("react.fragment"), s = Object.prototype.hasOwnProperty, u = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, y = { key: !0, ref: !0, __self: !0, __source: !0 };
   function h(a, d, T) {
-    var g, _ = {}, j = null, P = null;
-    T !== void 0 && (j = "" + T), d.key !== void 0 && (j = "" + d.key), d.ref !== void 0 && (P = d.ref);
+    var g, _ = {}, x = null, P = null;
+    T !== void 0 && (x = "" + T), d.key !== void 0 && (x = "" + d.key), d.ref !== void 0 && (P = d.ref);
     for (g in d)
       s.call(d, g) && !y.hasOwnProperty(g) && (_[g] = d[g]);
     if (a && a.defaultProps)
       for (g in d = a.defaultProps, d)
         _[g] === void 0 && (_[g] = d[g]);
-    return { $$typeof: i, type: a, key: j, ref: P, props: _, _owner: u.current };
+    return { $$typeof: o, type: a, key: x, ref: P, props: _, _owner: u.current };
   }
   return J.Fragment = c, J.jsx = h, J.jsxs = h, J;
 }
@@ -42,24 +42,24 @@ var G = {};
 var Ae;
 function hr() {
   return Ae || (Ae = 1, process.env.NODE_ENV !== "production" && function() {
-    var n = $e, i = Symbol.for("react.element"), c = Symbol.for("react.portal"), s = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), y = Symbol.for("react.profiler"), h = Symbol.for("react.provider"), a = Symbol.for("react.context"), d = Symbol.for("react.forward_ref"), T = Symbol.for("react.suspense"), g = Symbol.for("react.suspense_list"), _ = Symbol.for("react.memo"), j = Symbol.for("react.lazy"), P = Symbol.for("react.offscreen"), D = Symbol.iterator, $ = "@@iterator";
+    var n = $e, o = Symbol.for("react.element"), c = Symbol.for("react.portal"), s = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), y = Symbol.for("react.profiler"), h = Symbol.for("react.provider"), a = Symbol.for("react.context"), d = Symbol.for("react.forward_ref"), T = Symbol.for("react.suspense"), g = Symbol.for("react.suspense_list"), _ = Symbol.for("react.memo"), x = Symbol.for("react.lazy"), P = Symbol.for("react.offscreen"), D = Symbol.iterator, $ = "@@iterator";
     function F(e) {
       if (e === null || typeof e != "object")
         return null;
       var r = D && e[D] || e[$];
       return typeof r == "function" ? r : null;
     }
-    var x = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    var j = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     function m(e) {
       {
-        for (var r = arguments.length, t = new Array(r > 1 ? r - 1 : 0), o = 1; o < r; o++)
-          t[o - 1] = arguments[o];
+        for (var r = arguments.length, t = new Array(r > 1 ? r - 1 : 0), i = 1; i < r; i++)
+          t[i - 1] = arguments[i];
         I("error", e, t);
       }
     }
     function I(e, r, t) {
       {
-        var o = x.ReactDebugCurrentFrame, p = o.getStackAddendum();
+        var i = j.ReactDebugCurrentFrame, p = i.getStackAddendum();
         p !== "" && (r += "%s", t = t.concat([p]));
         var b = t.map(function(f) {
           return String(f);
@@ -70,16 +70,16 @@ function hr() {
     var E = !1, R = !1, W = !1, Y = !1, ee = !1, le;
     le = Symbol.for("react.module.reference");
     function Ve(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === s || e === y || ee || e === u || e === T || e === g || Y || e === P || E || R || W || typeof e == "object" && e !== null && (e.$$typeof === j || e.$$typeof === _ || e.$$typeof === h || e.$$typeof === a || e.$$typeof === d || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === s || e === y || ee || e === u || e === T || e === g || Y || e === P || E || R || W || typeof e == "object" && e !== null && (e.$$typeof === x || e.$$typeof === _ || e.$$typeof === h || e.$$typeof === a || e.$$typeof === d || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
       e.$$typeof === le || e.getModuleId !== void 0));
     }
     function Ye(e, r, t) {
-      var o = e.displayName;
-      if (o)
-        return o;
+      var i = e.displayName;
+      if (i)
+        return i;
       var p = r.displayName || r.name || "";
       return p !== "" ? t + "(" + p + ")" : t;
     }
@@ -118,9 +118,9 @@ function hr() {
           case d:
             return Ye(e, e.render, "ForwardRef");
           case _:
-            var o = e.displayName || null;
-            return o !== null ? o : N(e.type) || "Memo";
-          case j: {
+            var i = e.displayName || null;
+            return i !== null ? i : N(e.type) || "Memo";
+          case x: {
             var p = e, b = p._payload, f = p._init;
             try {
               return N(f(b));
@@ -193,15 +193,15 @@ function hr() {
         B < 0 && m("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var re = x.ReactCurrentDispatcher, te;
+    var re = j.ReactCurrentDispatcher, te;
     function X(e, r, t) {
       {
         if (te === void 0)
           try {
             throw Error();
           } catch (p) {
-            var o = p.stack.trim().match(/\n( *(at )?)/);
-            te = o && o[1] || "";
+            var i = p.stack.trim().match(/\n( *(at )?)/);
+            te = i && i[1] || "";
           }
         return `
 ` + te + e;
@@ -220,7 +220,7 @@ function hr() {
         if (t !== void 0)
           return t;
       }
-      var o;
+      var i;
       ne = !0;
       var p = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
@@ -239,14 +239,14 @@ function hr() {
             try {
               Reflect.construct(f, []);
             } catch (A) {
-              o = A;
+              i = A;
             }
             Reflect.construct(e, [], f);
           } else {
             try {
               f.call();
             } catch (A) {
-              o = A;
+              i = A;
             }
             e.call(f.prototype);
           }
@@ -254,14 +254,14 @@ function hr() {
           try {
             throw Error();
           } catch (A) {
-            o = A;
+            i = A;
           }
           e();
         }
       } catch (A) {
-        if (A && o && typeof A.stack == "string") {
+        if (A && i && typeof A.stack == "string") {
           for (var l = A.stack.split(`
-`), S = o.stack.split(`
+`), S = i.stack.split(`
 `), C = l.length - 1, w = S.length - 1; C >= 1 && w >= 0 && l[C] !== S[w]; )
             w--;
           for (; C >= 1 && w >= 0; C--, w--)
@@ -309,8 +309,8 @@ function hr() {
             return qe(e.render);
           case _:
             return K(e.type, r, t);
-          case j: {
-            var o = e, p = o._payload, b = o._init;
+          case x: {
+            var i = e, p = i._payload, b = i._init;
             try {
               return K(b(p), r, t);
             } catch {
@@ -319,30 +319,30 @@ function hr() {
         }
       return "";
     }
-    var z = Object.prototype.hasOwnProperty, Re = {}, _e = x.ReactDebugCurrentFrame;
-    function Z(e) {
+    var Z = Object.prototype.hasOwnProperty, Re = {}, _e = j.ReactDebugCurrentFrame;
+    function z(e) {
       if (e) {
         var r = e._owner, t = K(e.type, e._source, r ? r.type : null);
         _e.setExtraStackFrame(t);
       } else
         _e.setExtraStackFrame(null);
     }
-    function Ge(e, r, t, o, p) {
+    function Ge(e, r, t, i, p) {
       {
-        var b = Function.call.bind(z);
+        var b = Function.call.bind(Z);
         for (var f in e)
           if (b(e, f)) {
             var l = void 0;
             try {
               if (typeof e[f] != "function") {
-                var S = Error((o || "React class") + ": " + t + " type `" + f + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[f] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                var S = Error((i || "React class") + ": " + t + " type `" + f + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[f] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
                 throw S.name = "Invariant Violation", S;
               }
-              l = e[f](r, f, o, t, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+              l = e[f](r, f, i, t, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
             } catch (C) {
               l = C;
             }
-            l && !(l instanceof Error) && (Z(p), m("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", o || "React class", t, f, typeof l), Z(null)), l instanceof Error && !(l.message in Re) && (Re[l.message] = !0, Z(p), m("Failed %s type: %s", t, l.message), Z(null));
+            l && !(l instanceof Error) && (z(p), m("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", i || "React class", t, f, typeof l), z(null)), l instanceof Error && !(l.message in Re) && (Re[l.message] = !0, z(p), m("Failed %s type: %s", t, l.message), z(null));
           }
       }
     }
@@ -370,15 +370,15 @@ function hr() {
       if (Ke(e))
         return m("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", He(e)), Ce(e);
     }
-    var q = x.ReactCurrentOwner, ze = {
+    var q = j.ReactCurrentOwner, Ze = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, Te, je, oe;
+    }, Te, xe, oe;
     oe = {};
-    function Ze(e) {
-      if (z.call(e, "ref")) {
+    function ze(e) {
+      if (Z.call(e, "ref")) {
         var r = Object.getOwnPropertyDescriptor(e, "ref").get;
         if (r && r.isReactWarning)
           return !1;
@@ -386,7 +386,7 @@ function hr() {
       return e.ref !== void 0;
     }
     function Qe(e) {
-      if (z.call(e, "key")) {
+      if (Z.call(e, "key")) {
         var r = Object.getOwnPropertyDescriptor(e, "key").get;
         if (r && r.isReactWarning)
           return !1;
@@ -413,7 +413,7 @@ function hr() {
     function tr(e, r) {
       {
         var t = function() {
-          je || (je = !0, m("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
+          xe || (xe = !0, m("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
         };
         t.isReactWarning = !0, Object.defineProperty(e, "ref", {
           get: t,
@@ -421,10 +421,10 @@ function hr() {
         });
       }
     }
-    var nr = function(e, r, t, o, p, b, f) {
+    var nr = function(e, r, t, i, p, b, f) {
       var l = {
         // This tag allows us to uniquely identify this as a React Element
-        $$typeof: i,
+        $$typeof: o,
         // Built-in properties that belong on the element
         type: e,
         key: r,
@@ -442,7 +442,7 @@ function hr() {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: o
+        value: i
       }), Object.defineProperty(l, "_source", {
         configurable: !1,
         enumerable: !1,
@@ -450,12 +450,12 @@ function hr() {
         value: p
       }), Object.freeze && (Object.freeze(l.props), Object.freeze(l)), l;
     };
-    function ar(e, r, t, o, p) {
+    function ar(e, r, t, i, p) {
       {
         var b, f = {}, l = null, S = null;
-        t !== void 0 && (we(t), l = "" + t), Qe(r) && (we(r.key), l = "" + r.key), Ze(r) && (S = r.ref, er(r, p));
+        t !== void 0 && (we(t), l = "" + t), Qe(r) && (we(r.key), l = "" + r.key), ze(r) && (S = r.ref, er(r, p));
         for (b in r)
-          z.call(r, b) && !ze.hasOwnProperty(b) && (f[b] = r[b]);
+          Z.call(r, b) && !Ze.hasOwnProperty(b) && (f[b] = r[b]);
         if (e && e.defaultProps) {
           var C = e.defaultProps;
           for (b in C)
@@ -465,21 +465,21 @@ function hr() {
           var w = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
           l && rr(f, w), S && tr(f, w);
         }
-        return nr(e, l, S, p, o, q.current, f);
+        return nr(e, l, S, p, i, q.current, f);
       }
     }
-    var ie = x.ReactCurrentOwner, xe = x.ReactDebugCurrentFrame;
+    var ie = j.ReactCurrentOwner, je = j.ReactDebugCurrentFrame;
     function L(e) {
       if (e) {
         var r = e._owner, t = K(e.type, e._source, r ? r.type : null);
-        xe.setExtraStackFrame(t);
+        je.setExtraStackFrame(t);
       } else
-        xe.setExtraStackFrame(null);
+        je.setExtraStackFrame(null);
     }
     var se;
     se = !1;
     function ce(e) {
-      return typeof e == "object" && e !== null && e.$$typeof === i;
+      return typeof e == "object" && e !== null && e.$$typeof === o;
     }
     function Se() {
       {
@@ -526,8 +526,8 @@ Check the top-level render call using <` + t + ">.");
         if (ke[t])
           return;
         ke[t] = !0;
-        var o = "";
-        e && e._owner && e._owner !== ie.current && (o = " It was passed a child from " + N(e._owner.type) + "."), L(e), m('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', t, o), L(null);
+        var i = "";
+        e && e._owner && e._owner !== ie.current && (i = " It was passed a child from " + N(e._owner.type) + "."), L(e), m('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', t, i), L(null);
       }
     }
     function Pe(e, r) {
@@ -536,8 +536,8 @@ Check the top-level render call using <` + t + ">.");
           return;
         if (ae(e))
           for (var t = 0; t < e.length; t++) {
-            var o = e[t];
-            ce(o) && Oe(o, r);
+            var i = e[t];
+            ce(i) && Oe(i, r);
           }
         else if (ce(e))
           e._store && (e._store.validated = !0);
@@ -564,8 +564,8 @@ Check the top-level render call using <` + t + ">.");
         else
           return;
         if (t) {
-          var o = N(r);
-          Ge(t, e.props, "prop", o, e);
+          var i = N(r);
+          Ge(t, e.props, "prop", i, e);
         } else if (r.PropTypes !== void 0 && !se) {
           se = !0;
           var p = N(r);
@@ -577,16 +577,16 @@ Check the top-level render call using <` + t + ">.");
     function cr(e) {
       {
         for (var r = Object.keys(e.props), t = 0; t < r.length; t++) {
-          var o = r[t];
-          if (o !== "children" && o !== "key") {
-            L(e), m("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", o), L(null);
+          var i = r[t];
+          if (i !== "children" && i !== "key") {
+            L(e), m("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", i), L(null);
             break;
           }
         }
         e.ref !== null && (L(e), m("Invalid attribute `ref` supplied to `React.Fragment`."), L(null));
       }
     }
-    function Fe(e, r, t, o, p, b) {
+    function Fe(e, r, t, i, p, b) {
       {
         var f = Ve(e);
         if (!f) {
@@ -595,7 +595,7 @@ Check the top-level render call using <` + t + ">.");
           var S = or(p);
           S ? l += S : l += Se();
           var C;
-          e === null ? C = "null" : ae(e) ? C = "array" : e !== void 0 && e.$$typeof === i ? (C = "<" + (N(e.type) || "Unknown") + " />", l = " Did you accidentally export a JSX literal instead of a component?") : C = typeof e, m("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", C, l);
+          e === null ? C = "null" : ae(e) ? C = "array" : e !== void 0 && e.$$typeof === o ? (C = "<" + (N(e.type) || "Unknown") + " />", l = " Did you accidentally export a JSX literal instead of a component?") : C = typeof e, m("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", C, l);
         }
         var w = ar(e, r, t, p, b);
         if (w == null)
@@ -603,7 +603,7 @@ Check the top-level render call using <` + t + ">.");
         if (f) {
           var O = r.children;
           if (O !== void 0)
-            if (o)
+            if (i)
               if (ae(O)) {
                 for (var U = 0; U < O.length; U++)
                   Pe(O[U], e);
@@ -629,27 +629,27 @@ Check the top-level render call using <` + t + ">.");
 process.env.NODE_ENV === "production" ? ue.exports = pr() : ue.exports = hr();
 var v = ue.exports;
 function Me(n) {
-  var i, c, s = "";
+  var o, c, s = "";
   if (typeof n == "string" || typeof n == "number")
     s += n;
   else if (typeof n == "object")
     if (Array.isArray(n)) {
       var u = n.length;
-      for (i = 0; i < u; i++)
-        n[i] && (c = Me(n[i])) && (s && (s += " "), s += c);
+      for (o = 0; o < u; o++)
+        n[o] && (c = Me(n[o])) && (s && (s += " "), s += c);
     } else
       for (c in n)
         n[c] && (s && (s += " "), s += c);
   return s;
 }
 function k() {
-  for (var n, i, c = 0, s = "", u = arguments.length; c < u; c++)
-    (n = arguments[c]) && (i = Me(n)) && (s && (s += " "), s += i);
+  for (var n, o, c = 0, s = "", u = arguments.length; c < u; c++)
+    (n = arguments[c]) && (o = Me(n)) && (s && (s += " "), s += o);
   return s;
 }
 const br = ({
   className: n,
-  value: i,
+  value: o,
   valueSetter: c,
   placeholder: s,
   label: u,
@@ -657,20 +657,20 @@ const br = ({
   units: h,
   max: a
 }) => {
-  const [d, T] = V(!1), g = Q(null), _ = typeof a < "u", j = (x) => {
-    _ && x > a ? T(!0) : T(!1);
+  const [d, T] = V(!1), g = Q(null), _ = typeof a < "u", x = (j) => {
+    _ && j > a ? T(!0) : T(!1);
   }, P = () => {
     if (!g.current)
       return;
-    const x = g.current.value;
+    const j = g.current.value;
     let m;
-    m = parseFloat(x), isNaN(m) ? m = 0 : a && m > a && (m = a, T(!0)), c(m), g.current.value = String(m);
-  }, D = k({ "teleaps-amount-input": !0, [n]: n, unacceptable: d }), $ = We(i) ? String(i).length * 19 + 2 + "px" : "25px", F = { ...y, width: $ };
+    m = parseFloat(j), isNaN(m) ? m = 0 : a && m > a && (m = a, T(!0)), c(m), g.current.value = String(m);
+  }, D = k({ "teleaps-amount-input": !0, [n]: n, unacceptable: d }), $ = We(o) ? String(o).length * 20 + 5 + "px" : "25px", F = { ...y, width: $ };
   return d && F.color && delete F.color, Ie(
     () => {
-      g.current && (_ && j(i), g.current.value = String(i));
+      g.current && (_ && x(o), g.current.value = String(o));
     },
-    [i, a, g.current]
+    [o, a, g.current]
   ), /* @__PURE__ */ v.jsx("div", { className: D, children: /* @__PURE__ */ v.jsxs("div", { className: "amount-input-main-row", children: [
     u && /* @__PURE__ */ v.jsx("div", { className: "amount-input-label", children: u }),
     /* @__PURE__ */ v.jsx(
@@ -689,18 +689,18 @@ const br = ({
 };
 const yr = ({
   type: n,
-  size: i,
+  size: o,
   color: c,
   className: s,
   children: u,
   onClick: y,
   disabled: h
 }) => {
-  const a = i ? i + "px" : "auto", d = u ? void 0 : a, T = (j) => {
-    h || y(j);
+  const a = o ? o + "px" : "auto", d = u ? void 0 : a, T = (x) => {
+    h || y(x);
   }, g = {
-    width: i ? d : "",
-    height: i ? a : "",
+    width: o ? d : "",
+    height: o ? a : "",
     color: c && (n === "outline" ? c : ""),
     background: c && (n !== "outline" ? c : ""),
     borderColor: c
@@ -709,14 +709,14 @@ const yr = ({
 };
 const Er = ({
   text: n,
-  className: i,
+  className: o,
   checked: c,
   valueSetter: s,
   rounded: u
 }) => {
   const y = Q(null), h = vr(6), a = () => {
     s(y.current.checked);
-  }, d = k({ "teleaps-custom-checkbox": !0, "no-text": !n, [i]: i, rounded: u });
+  }, d = k({ "teleaps-custom-checkbox": !0, "no-text": !n, [o]: o, rounded: u });
   return /* @__PURE__ */ v.jsxs("div", { className: d, children: [
     /* @__PURE__ */ v.jsx(
       "input",
@@ -733,7 +733,7 @@ const Er = ({
     /* @__PURE__ */ v.jsx("label", { htmlFor: h, children: n })
   ] });
 };
-const Rr = ({ values: n, valueSetter: i, className: c, lineColor: s }) => {
+const Rr = ({ values: n, valueSetter: o, className: c, lineColor: s }) => {
   const u = n.filter((E) => E.selected === !0).length, y = u - 1, h = Q(null), a = (E) => {
     if (E === u)
       return;
@@ -743,18 +743,18 @@ const Rr = ({ values: n, valueSetter: i, className: c, lineColor: s }) => {
       if (Y > E)
         return { ...W, selected: !1 };
     });
-    i(R);
-  }, [d, T] = V(0), [g, _] = V(0), [j, P] = V(0), D = (E) => {
+    o(R);
+  }, [d, T] = V(0), [g, _] = V(0), [x, P] = V(0), D = (E) => {
     if ("TouchEvent" in window && E.nativeEvent instanceof TouchEvent)
       return E.nativeEvent.touches[0].clientX;
     if (E.nativeEvent instanceof MouseEvent)
       return E.nativeEvent.clientX;
   }, $ = (E) => {
     _(void 0), T(D(E));
-  }, F = (E) => _(D(E)), x = () => {
+  }, F = (E) => _(D(E)), j = () => {
     if (!d || !g)
       return;
-    const R = ~~((g - d) / j), W = R > 0 ? u + R >= n.length ? n.length : R : u - R <= 0 ? 0 : R;
+    const R = ~~((g - d) / x), W = R > 0 ? u + R >= n.length ? n.length : R : u - R <= 0 ? 0 : R;
     a(u + W);
   }, m = k({ "teleaps-dots-slider": !0, [c]: c });
   let I = {};
@@ -768,8 +768,8 @@ const Rr = ({ values: n, valueSetter: i, className: c, lineColor: s }) => {
       onMouseDown: $,
       onTouchMove: F,
       onMouseMove: F,
-      onTouchEnd: x,
-      onMouseUp: x,
+      onTouchEnd: j,
+      onMouseUp: j,
       ref: h,
       children: n.map((E, R) => {
         const W = k({ "dots-slider-point": !0, "active-dot": E.selected, "current-dot": R === u }), Y = k({ "dots-slider-line": !0, "active-line": R <= y }), ee = R < n.length - 1;
@@ -781,10 +781,10 @@ const Rr = ({ values: n, valueSetter: i, className: c, lineColor: s }) => {
     }
   );
 };
-const _r = () => /* @__PURE__ */ v.jsx("div", { className: "teleaps-spinner-container", children: /* @__PURE__ */ v.jsx("div", { className: "spinner" }) });
+const _r = ({ size: n, className: o }) => /* @__PURE__ */ v.jsx("div", { className: k({ "teleaps-spinner-container": !0, [o]: o }), children: /* @__PURE__ */ v.jsx("div", { className: "spinner", style: { height: n + "px", width: n + "px" } }) });
 const Cr = ({
   size: n,
-  color: i,
+  color: o,
   backgroundColor: c,
   className: s,
   completed: u
@@ -793,12 +793,12 @@ const Cr = ({
     background: c || ""
   }, a = {
     padding: n ? `${n}px` : "2px",
-    background: i || "",
+    background: o || "",
     width: "0"
   };
   return We(u) && (u > 100 ? a.width = "100%" : u < 0 ? a.width = "0" : a.width = u + "%"), /* @__PURE__ */ v.jsx("div", { className: y, children: /* @__PURE__ */ v.jsx("div", { className: "bar-background", style: h, children: /* @__PURE__ */ v.jsx("span", { className: "completed-progress", style: a }) }) });
 };
-const wr = ({ className: n, step: i, lineColor: c, value: s, valueSetter: u, min: y, max: h }) => {
+const wr = ({ className: n, step: o, lineColor: c, value: s, valueSetter: u, min: y, max: h }) => {
   const a = Q(null), d = k({ "teleaps-range-slider": !0, [n]: n }), T = () => {
     const g = a == null ? void 0 : a.current, _ = parseFloat(g.value);
     u(_);
@@ -807,7 +807,7 @@ const wr = ({ className: n, step: i, lineColor: c, value: s, valueSetter: u, min
     "input",
     {
       type: "range",
-      step: i,
+      step: o,
       style: { backgroundColor: c },
       value: s,
       ref: a,
@@ -819,7 +819,7 @@ const wr = ({ className: n, step: i, lineColor: c, value: s, valueSetter: u, min
 };
 const Tr = ({
   className: n,
-  value: i,
+  value: o,
   valueSetter: c,
   type: s,
   placeholder: u,
@@ -828,7 +828,7 @@ const Tr = ({
   max: a,
   borderColor: d
 }) => {
-  const [T, g] = V(!1), [_, j] = V(!1), P = s === "number", D = (I) => {
+  const [T, g] = V(!1), [_, x] = V(!1), P = s === "number", D = (I) => {
     const E = I.currentTarget.value;
     let R;
     if (P) {
@@ -838,14 +838,14 @@ const Tr = ({
     } else
       R = String(I.currentTarget.value);
     c(R);
-  }, $ = () => j(!0), F = () => j(!1), x = k({ "teleaps-simple-input": !0, [n]: n, unacceptable: T }), m = { ...h };
-  return T && m.color && delete m.color, /* @__PURE__ */ v.jsxs("div", { className: x, children: [
+  }, $ = () => x(!0), F = () => x(!1), j = k({ "teleaps-simple-input": !0, [n]: n, unacceptable: T }), m = { ...h };
+  return T && m.color && delete m.color, /* @__PURE__ */ v.jsxs("div", { className: j, children: [
     /* @__PURE__ */ v.jsxs("div", { className: "simple-input-main-row", children: [
       y && /* @__PURE__ */ v.jsx("div", { className: "simple-input-label", children: y }),
       /* @__PURE__ */ v.jsx(
         "input",
         {
-          value: i ?? "",
+          value: o ?? "",
           onChange: D,
           type: s,
           placeholder: u,
@@ -859,18 +859,18 @@ const Tr = ({
     /* @__PURE__ */ v.jsx("div", { className: "simple-input-underline", style: { borderColor: _ && d ? d : void 0 } })
   ] });
 };
-const jr = ({
+const xr = ({
   className: n,
-  selected: i,
+  selected: o,
   switchHandler: c,
-  activeColor: s,
+  color: s,
   defaultColor: u
 }) => {
-  const y = k({ "teleaps-custom-switch": !0, [n]: n }), h = k({ "switch-background": !0, "no-select": !0 }), a = k({ "switch-punkt-selected": i, "switch-punkt": !i }), d = i ? s : u;
+  const y = k({ "teleaps-custom-switch": !0, [n]: n }), h = k({ "switch-background": !0, "no-select": !0 }), a = k({ "switch-punkt-selected": o, "switch-punkt": !o }), d = o ? s : u;
   return /* @__PURE__ */ v.jsx("div", { className: y, onClick: c, children: /* @__PURE__ */ v.jsx("div", { className: h, style: { background: d }, children: /* @__PURE__ */ v.jsx("div", { className: a, style: { borderColor: s }, children: " " }) }) });
 };
-const xr = ({ tabs: n, defaultIndex: i }) => {
-  const [c, s] = V(n[i ?? 0].caption), u = n.map(
+const jr = ({ tabs: n, defaultIndex: o }) => {
+  const [c, s] = V(n[o ?? 0].caption), u = n.map(
     (a) => /* @__PURE__ */ v.jsx(
       "div",
       {
@@ -895,6 +895,6 @@ export {
   Cr as ProgressBar,
   wr as Range,
   Tr as SimpleInput,
-  jr as Switch,
-  xr as Tabs
+  xr as Switch,
+  jr as Tabs
 };

@@ -1,29 +1,29 @@
 {
-  "name": "teleapstyle",
+  "name": "teleui",
   "author": "Nick G.",
   "license": "MIT",
   "version": "0.0.0",
-  "description": "Teleapstyle dev",
-  "main": "./build/teleapstyle.umd.cjs",
+  "description": "Teleui dev",
+  "main": "./build/teleui.umd.cjs",
   "types": "./build/index.d.ts",
-  "module": "./build/teleapstyle.js",
+  "module": "./build/teleui.js",
   "files": [
     "build"
   ],
   "exports": {
     ".": {
       "import": {
-        "default": "./build/teleapstyle.js",
+        "default": "./build/teleui.js",
         "types": "./build/index.d.ts"
       },
-      "require": "./dist/teleapstyle.umd.cjs"
+      "require": "./dist/teleui.umd.cjs"
     }
   },
   "type": "module",
-  "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
+  "homepage": "https://psychosynthesis.github.io/TeleUI/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Psychosynthesis/Teleapstyle.git"
+    "url": "git+https://github.com/Psychosynthesis/TeleUI.git"
   },
   "scripts": {
     "dev": "vite --host",
@@ -32,7 +32,9 @@
   },
   "keywords": [
     "telegram",
-    "components"
+    "components",
+    "ui",
+    "framework"
   ],
   "dependencies": {
     "clsx": "^2.1.0",

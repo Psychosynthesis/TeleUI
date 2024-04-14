@@ -27,6 +27,12 @@ body { min-width: 320px; min-height: 100vh; background-color: $defaultThemeBackg
   margin-bottom: 30px;
 }
 
+.components-divider {
+  font-size: 150%;
+  margin: 50px auto;
+  text-align: center;
+}
+
 .component-tips-label {
   font-weight: bold;
   font-size: 85%;

@@ -1,9 +1,10 @@
+import clsx from 'clsx';
 import './style.scss';
 
-export const Loader = () => {
-	return (
-		<div className="teleaps-spinner-container">
-			<div className="spinner"/>
-		</div>
-	)
-}
+import { type LoaderProps } from './types';
+
+export const Loader = ({ size, className }: LoaderProps) => (
+	<div className={clsx({'teleaps-spinner-container': true, [className!]: className })}>
+		<div className="spinner" style={{ height: size + 'px', width: size + 'px' }} />
+	</div>
+);

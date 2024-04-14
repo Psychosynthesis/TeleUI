@@ -5,6 +5,8 @@
   input {
     height: 5px;
     width: 100%;
+    padding: 0;
+    margin: 0;
 
     &[type=range] {
       -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */

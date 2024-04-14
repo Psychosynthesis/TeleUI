@@ -6,6 +6,6 @@ export type SwitchProps = {
   enabled?: boolean;
   className?: string;
   style?: React.CSSProperties;
-  activeColor: Color;
+  color: Color;
   defaultColor: Color;
 }
