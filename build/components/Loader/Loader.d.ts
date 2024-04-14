@@ -1,2 +1,3 @@
 import './style.scss';
-export declare const Loader: () => import("react/jsx-runtime").JSX.Element;
+import { type LoaderProps } from './types';
+export declare const Loader: ({ size, className }: LoaderProps) => import("react/jsx-runtime").JSX.Element;

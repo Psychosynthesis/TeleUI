@@ -1,28 +1,28 @@
 {
-  "name": "teleapstyle",
+  "name": "teleui",
   "author": "Nick G.",
   "license": "MIT",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A small library of components for creating mini-applications in the Telegram ecosystem",
-  "main": "./build/teleapstyle.umd.cjs",
+  "main": "./build/teleui.umd.cjs",
   "types": "./build/index.d.ts",
-  "module": "./build/teleapstyle.js",
+  "module": "./build/teleui.js",
   "files": [ "build" ],
   "exports": {
     ".": {
       "import": {
-        "default": "./build/teleapstyle.js",
+        "default": "./build/teleui.js",
         "types": "./build/index.d.ts"
       },
-      "require": "./dist/teleapstyle.umd.cjs"
+      "require": "./dist/teleui.umd.cjs"
     }
   },
   "type": "module",
-  "homepage": "https://psychosynthesis.github.io/Teleapstyle/",
-  "funding": "https://psychosynthesis.github.io/Teleapstyle/",
+  "homepage": "https://psychosynthesis.github.io/TeleUI/",
+  "funding": "https://psychosynthesis.github.io/TeleUI/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Psychosynthesis/Teleapstyle.git"
+    "url": "git+https://github.com/Psychosynthesis/TeleUI.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
