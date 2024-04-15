@@ -1,6 +1,6 @@
 {
   "name": "teleui-guide",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Web guide for TeleUI lib",
   "main": "./guide.tsx",
   "homepage": "https://psychosynthesis.github.io/TeleUI/",
