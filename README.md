@@ -24,13 +24,13 @@ Or import only neccessary: \
 `import { AmountInput, Button } from 'teleui';`
 
 ### List of implemented components
- - [https://psychosynthesis.github.io/TeleUI#amount-input](AmountInput)
- - [https://psychosynthesis.github.io/TeleUI#button-component](Button)
- - [https://psychosynthesis.github.io/TeleUI#checkbox-component](Checkbox)
- - [https://psychosynthesis.github.io/TeleUI#dot-slider](DotSlider)
- - [https://psychosynthesis.github.io/TeleUI#loader-component](Loader)
- - [https://psychosynthesis.github.io/TeleUI#progress-bar](ProgressBar)
- - [https://psychosynthesis.github.io/TeleUI#range-component](Range)
- - [https://psychosynthesis.github.io/TeleUI#simple-input](SimpleInput)
- - [https://psychosynthesis.github.io/TeleUI#switch-component](Switch)
- - [https://psychosynthesis.github.io/TeleUI#tabs-component](Tabs)
+ - [AmountInput](https://psychosynthesis.github.io/TeleUI#amount-input)
+ - [Button](https://psychosynthesis.github.io/TeleUI#button-component)
+ - [Checkbox](https://psychosynthesis.github.io/TeleUI#checkbox-component)
+ - [DotSlider](https://psychosynthesis.github.io/TeleUI#dot-slider)
+ - [Loader](https://psychosynthesis.github.io/TeleUI#loader-component)
+ - [ProgressBar](https://psychosynthesis.github.io/TeleUI#progress-bar)
+ - [Range](https://psychosynthesis.github.io/TeleUI#range-component)
+ - [SimpleInput](https://psychosynthesis.github.io/TeleUI#simple-input)
+ - [Switch](https://psychosynthesis.github.io/TeleUI#switch-component)
+ - [Tabs](https://psychosynthesis.github.io/TeleUI#tabs-component)
