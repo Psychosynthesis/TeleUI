@@ -31,6 +31,6 @@ Or import only neccessary: \
  - [Loader](https://psychosynthesis.github.io/TeleUI#loader-component)
  - [ProgressBar](https://psychosynthesis.github.io/TeleUI#progress-bar)
  - [Range](https://psychosynthesis.github.io/TeleUI#range-component)
- - [SimpleInput](https://psychosynthesis.github.io/TeleUI#simple-input)
+ - SimpleInput (does not provide example yet)
  - [Switch](https://psychosynthesis.github.io/TeleUI#switch-component)
  - [Tabs](https://psychosynthesis.github.io/TeleUI#tabs-component)
