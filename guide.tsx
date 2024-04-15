@@ -2,7 +2,6 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 
 import * as Components from 'teleui';
-import './main.scss';
 
 const container = document.getElementById('main-node');
 const useState = React.useState;
@@ -12,11 +11,10 @@ const Guide = () => {
     const [switchState, setSwitchState] = useState(true);
     const [rangeValue, setRangeValue] = useState(40);
 
-
     return (
         <div>
-            <h2>«TeleUI» Guide</h2>
-            «TeleUI» is a lightweight components lib to easy build your Telegram mini-apps.
+            <h2>TeleUI Guide</h2>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.npmjs.com/package/teleui">«TeleUI»</a> is a lightweight components lib to easy build your Telegram mini-apps.
             In fact, the library is simple and universal, so it can actually be used for the web to.
             The main idea of «TeleUI» is to create a simple and minimalistic component library which will allow
             you to create applications look alike to the official Telegram Mini Apps interface, however,
@@ -55,9 +53,9 @@ const Guide = () => {
                 <div style={{ display: 'flex', justifyContent: 'space-around' }}>
                     <Components.Tabs
                         tabs={[
-                            { caption: 'First Tab', content: <div>Some content</div> },
-                            { caption: 'Second Tab', content: <div>Another content</div> },
-                            { caption: 'Third Tab', content: <div>Other content</div> },
+                            { caption: 'First Tab', content: <div>Some nice content...</div> },
+                            { caption: 'Second Tab', content: <div>Another good content...</div> },
+                            { caption: 'Third Tab', content: <div>Any other content</div> },
                         ]}
                     />
                 </div>
@@ -65,9 +63,9 @@ const Guide = () => {
                 <pre>{`
                 <Components.Tabs
                     tabs={[
-                        { caption: 'First Tab', content: <div>Some content</div> },
-                        { caption: 'Second Tab', content: <div>Another content</div> },
-                        { caption: 'Third Tab', content: <div>Other content</div> },
+                        { caption: 'First Tab', content: <div>Some nice content</div> },
+                        { caption: 'Second Tab', content: <div>Another good content</div> },
+                        { caption: 'Third Tab', content: <div>Any other content</div> },
                     ]}
                 />
                 `}</pre>
@@ -315,7 +313,7 @@ const Guide = () => {
 
 // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
 ReactDOM.createRoot(container!).render(
-  <React.StrictMode>
-    <Guide />
-  </React.StrictMode>,
+    <React.StrictMode>
+        <Guide />
+    </React.StrictMode>,
 )
