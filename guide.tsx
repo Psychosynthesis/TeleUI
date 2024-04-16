@@ -10,6 +10,14 @@ const Guide = () => {
     const [amountInputVal, setAmountInputVal] = useState(null);
     const [switchState, setSwitchState] = useState(true);
     const [rangeValue, setRangeValue] = useState(40);
+    const [dotSliderVals, setDotSliderVals] = useState([
+        { value: '12', caption: '12%', selected: true },
+        { value: '24', caption: '24%', selected: false },
+        { value: '46', caption: '46%', selected: false },
+        { value: '72', caption: '72%', selected: false },
+        { value: '88', caption: '88%', selected: false },
+        { value: '99', caption: '99%', selected: false }
+    ]);
 
     return (
         <div>
@@ -27,7 +35,13 @@ const Guide = () => {
             if vars changed in initData, due to TMA.js development), instead you can pass it to the components that
             support color-parameter (or lineColor), or just pass your own class.
             <br /><br />
-            Also, the library does not use any font settings - do it yourself as you see fit.
+            Onece again, what these components do NOT do:
+            <ul>
+                <li>Does not work with colors other than the default ones, or those that you pass to the components yourself through parameters or set by passed classes</li>
+                <li>Does not work with the layout of the grid of your application: C'MON GUYS, YOU DO NOT NEED A LIB FOR THAT (throw tailwind in the trash)</li>
+                <li>Also, the library does not use any font settings - do it yourself as you see fit.</li>
+            </ul>
+            All this can and should be done without third-party libraries. Write good code!
             <br /><br />
             You can <a target="_blank" rel="noopener noreferrer" href="https://github.com/Psychosynthesis/TeleUI">suggest your improvements</a>, we will definitely consider them.
             <h2><a id="about-usage">Usage</a></h2>
@@ -35,11 +49,16 @@ const Guide = () => {
             <pre>npm i teleui</pre>
             <br /><br />
             You can simply import all the functions from the library:<br />
-            <pre>import * as Components from 'teleui';</pre>
-            <pre>{`<Components.AmountInput ... /> // In this case you can use it like this`}</pre>
+            <pre>{`
+import * as Components from 'teleui';
+...
+<Components.AmountInput ... /> // In this case you can use it like this
+            `}</pre>
             <br /><br />
             Or just import only neccessary:
-            <pre>{`import { AmountInput, Button } from 'teleui';`}</pre>
+            <pre>{`
+import { AmountInput, Button } from 'teleui';
+`}</pre>
             <br /><br />
             <hr />
             <br />
@@ -61,13 +80,13 @@ const Guide = () => {
                 </div>
                 <div className="component-tips-label">Code:</div>
                 <pre>{`
-                <Components.Tabs
-                    tabs={[
-                        { caption: 'First Tab', content: <div>Some nice content</div> },
-                        { caption: 'Second Tab', content: <div>Another good content</div> },
-                        { caption: 'Third Tab', content: <div>Any other content</div> },
-                    ]}
-                />
+<Components.Tabs
+    tabs={[
+        { caption: 'First Tab', content: <div>Some nice content</div> },
+        { caption: 'Second Tab', content: <div>Another good content</div> },
+        { caption: 'Third Tab', content: <div>Any other content</div> },
+    ]}
+/>
                 `}</pre>
             </div>
 
@@ -91,17 +110,17 @@ const Guide = () => {
                 />
                 <div className="component-tips-label">Code:</div>
                 <pre>{`
-                const [amountInputVal, setAmountInputVal] = useState(null);
-                // ...
-                <AmountInput
-                    value={amountInputVal}
-                    valueSetter={setAmountInputVal}
-                    placeholder="0"
-                    label="Buy"
-                    units="%"
-                    inputStyle={{ color: '#fff' }}
-                    max={100}
-                />`}
+const [amountInputVal, setAmountInputVal] = useState(null);
+// ...
+<AmountInput
+    value={amountInputVal}
+    valueSetter={setAmountInputVal}
+    placeholder="0"
+    label="Buy"
+    units="%"
+    inputStyle={{ color: '#fff' }}
+    max={100}
+/>`}
                 </pre>
             </div>
 
@@ -109,22 +128,22 @@ const Guide = () => {
 
             <div className="component-row">
                 <h3><a id="button-component">Button</a></h3>
-                This is just a button. No, really.
+                This is just a button. No, really.<br />
                 You can pass a child element, such as a link or your own icon.
                 <br /><br />
                 <div className="component-tips-label">Demo:</div>
-                <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-around', flexDirection: 'column' }}>
                     <Components.Button onClick={() => {}}>
                         Just Button
                     </Components.Button>
-
+                    <div>&nbsp;</div>
                     <Components.Button
                         onClick={() => {}}
                         color="#2f6ea5"
                     >
                         <img src="https://psychosynthesis.github.io/TeleUI/icon.png" /> Button with child & color
                     </Components.Button>
-
+                    <div>&nbsp;</div>
                     <Components.Button
                         onClick={() => {}}
                         type="outline"
@@ -135,15 +154,27 @@ const Guide = () => {
                     </Components.Button>
                 </div>
                 <div className="component-tips-label">Code:</div>
-                <pre>
-                    {`<Button onClick={clickHandler}>Just Button</Button>`}
-                </pre>
-                <pre>
-                    {`<Button onClick={clickHandler} color="#2f6ea5"><img src="https://psychosynthesis.github.io/TeleUI/icon.png" /> Button with child & color</Button>`}
-                </pre>
-                <pre>
-                    {`<Button onClick={clickHandler} type="outline" size={15} color="#ffffff">Small outline Button</Button>`}
-                </pre>
+                <pre>{`
+<Button onClick={clickHandler}>
+    Just Button
+</Button>
+
+<Button
+    onClick={clickHandler}
+    color="#2f6ea5"
+>
+    <img src="https://psychosynthesis.github.io/TeleUI/icon.png" /> Button with child & color
+</Button>
+
+<Button
+    onClick={clickHandler}
+    type="outline"
+    size={15}
+    color="#ffffff"
+>
+    Small outline Button
+</Button>
+                `}</pre>
             </div>
 
             <div className="components-divider">· · ·</div>
@@ -162,12 +193,12 @@ const Guide = () => {
                 </div>
                 <div className="component-tips-label">Code:</div>
                 <pre>{`
-                <Switch
-                    selected={switchState} // boolean
-                    switchHandler={() => setSwitchState(!switchState)}
-                    color="#50a7ea"
-                    defaultColor="#bbb"
-                />
+<Switch
+    selected={switchState} // boolean
+    switchHandler={() => setSwitchState(!switchState)}
+    color="#50a7ea"
+    defaultColor="#bbb"
+/>
                 `}</pre>
             </div>
 
@@ -185,19 +216,18 @@ const Guide = () => {
                 </div>
                 <div className="component-tips-label">Code:</div>
                 <pre>{`
-                <Components.Checkbox
-                    text="Just checkbox"
-                    checked={switchState} // boolean
-                    valueSetter={() => setSwitchState(!switchState)}
-                />
-                `}</pre>
-                <pre>{`
-                <Components.Checkbox
-                    text="Rounded checkbox"
-                    checked={switchState}
-                    valueSetter={() => {}}
-                    rounded
-                />
+<Components.Checkbox
+    text="Just checkbox"
+    checked={switchState} // boolean
+    valueSetter={() => setSwitchState(!switchState)}
+/>
+
+<Components.Checkbox
+    text="Rounded checkbox"
+    checked={switchState}
+    valueSetter={() => {}}
+    rounded
+/>
                 `}</pre>
             </div>
 
@@ -230,11 +260,18 @@ const Guide = () => {
                     <Components.ProgressBar completed={67} color="#4ddd1f" backgroundColor="#33aa2a" size={4} />
                 </div>
                 <div className="component-tips-label">Code:</div>
-                <pre>
-                    {`<Components.ProgressBar completed={47} color="#9bfecf" />`}
-                </pre>
-                <pre>
-                    {`<Components.ProgressBar completed={67} color="#4ddd1f" backgroundColor="#33aa2a" size={4} />`}
+                <pre>{`
+<Components.ProgressBar
+    completed={47}
+    color="#9bfecf"
+/>
+<Components.ProgressBar
+    completed={67}
+    color="#4ddd1f"
+    backgroundColor="#33aa2a"
+    size={4}
+/>
+                    `}
                 </pre>
             </div>
 
@@ -250,29 +287,26 @@ const Guide = () => {
                 <div style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
                     <Components.DotSlider
                         lineColor="#33fedf"
-                        values={[
-                            { value: '12', caption: '12%', selected: true },
-                            { value: '24', caption: '24%', selected: false },
-                            { value: '46', caption: '46%', selected: false },
-                            { value: '72', caption: '72%', selected: false },
-                            { value: '88', caption: '88%', selected: false }
-                        ]}
-                        valueSetter={() => {}}
+                        values={dotSliderVals}
+                        valueSetter={setDotSliderVals}
                     />
                 </div>
                 <div className="component-tips-label">Code:</div>
                 <pre>{`
-                <Components.DotSlider
-                    lineColor="#33fedf"
-                    values={[
-                        { value: '12', caption: '12%', selected: true },
-                        { value: '24', caption: '24%', selected: false },
-                        { value: '46', caption: '46%', selected: false },
-                        { value: '72', caption: '72%', selected: false },
-                        { value: '88', caption: '88%', selected: false }
-                    ]}
-                    valueSetter={() => {}}
-                />
+const [dotSliderVals, setDotSliderVals] = useState([
+    { value: '12', caption: '12%', selected: true },
+    { value: '24', caption: '24%', selected: false },
+    { value: '46', caption: '46%', selected: false },
+    { value: '72', caption: '72%', selected: false },
+    { value: '88', caption: '88%', selected: false },
+    { value: '99', caption: '99%', selected: false },
+]);
+...
+<Components.DotSlider
+    lineColor="#33fedf"
+    values={dotSliderVals}
+    valueSetter={setDotSliderVals}
+/>
                 `}</pre>
             </div>
 
@@ -295,16 +329,16 @@ const Guide = () => {
                 </div>
                 <div className="component-tips-label">Code:</div>
                 <pre>{`
-                const [rangeValue, setRangeValue] = useState(40);
-                // ...
-                <Components.Range
-                    lineColor="#55cdff"
-                    step={4}
-                    value={rangeValue}
-                    valueSetter={setRangeValue}
-                    min={10}
-                    max={100}
-                />
+const [rangeValue, setRangeValue] = useState(40);
+// ...
+<Components.Range
+    lineColor="#55cdff"
+    step={4}
+    value={rangeValue}
+    valueSetter={setRangeValue}
+    min={10}
+    max={100}
+/>
                 `}</pre>
             </div>
         </div>

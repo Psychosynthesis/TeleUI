@@ -1,25 +1,81 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="24x24" href="/icon.png">
     <link rel="shortcut icon" sizes="24x24" href="/icon.png" />
     <title>TeleUI Guide</title>
-  	<style>
-      html, body { margin: 0; max-width: 100%; background: #333; color: #e0e0e0;  }
-      body { min-width: 320px; min-height: 100vh; }
+    <style>
+    :root {
+        font-family: Helvetica, Arial, sans-serif;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: 100%;
+    }
 
-      #main-node {
-          margin: 0 auto;
-          overflow-x: hidden;
-          min-height: 100vh; /* remove this to make pages not full-height */
-          max-width: 640px;
-      }
-  	</style>
-  </head>
-  <body>
+    html, body { margin: 0; max-width: 100%; background: #222; color: #e0e0e0;  }
+    body { min-width: 320px; min-height: 100vh; }
+
+    h3 {
+        color: #4f84ea;
+    }
+
+    a, a:link, a:visited {
+        color: #50a7ea;
+        text-decoration: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    a:hover {
+        color: #5a6edc;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    a:active {
+        color:  #6ea0e6;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    pre {
+        overflow-x: scroll;
+        background: #000;
+        padding: 10px;
+    }
+
+    #main-node {
+        margin: 0 auto;
+        overflow-x: hidden;
+        min-height: 100vh; /* remove this to make pages not full-height */
+        max-width: 640px;
+    }
+
+    .component-row {
+        margin-bottom: 50px;
+    }
+
+    .components-divider {
+        font-size: 150%;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .component-tips-label {
+        font-weight: bold;
+        font-size: 85%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 699px) {
+        body { padding: 30px; }
+    }
+    </style>
+</head>
+<body>
     <div id="main-node"></div>
     <script type="module" src="/guide.tsx"></script>
-  </body>
+</body>
 </html>
