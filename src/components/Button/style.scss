@@ -2,10 +2,11 @@
 @import '@Commn/sizes';
 
 .teleuicustom-button {
-	padding: $middle-gap;
+    width: fit-content;
 	max-height: 48px;
-	border-radius: 4px;
+	border-radius: 5px;
 	cursor: pointer;
+    padding: $middle-gap;
 	white-space: break-spaces;
 	font-style: normal;
 	font-family: "Roboto Bold";

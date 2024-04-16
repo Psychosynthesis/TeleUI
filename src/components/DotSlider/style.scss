@@ -57,7 +57,7 @@
   .dots-slider-line {
     height: 2px;
     flex-grow: 1;
-    filter: grayscale(70%);
+    filter: grayscale(75%);
     background: $defaultThemeHintText;
 
     &.active-line {
