@@ -1,5 +1,12 @@
-# TeleUI
-[![npm version](https://img.shields.io/npm/v/teleui?color=%23047dec)](https://www.npmjs.org/package/teleui)
+<h1>
+    <p align="center">
+        TeleUI <img src="images/TeleUI logo.png" height="40" alt="TeleUI logo" />
+    </p>
+</h1>
+
+[![npm version](https://img.shields.io/npm/v/teleui?color=%23047dec)](https://www.npmjs.org/package/teleui)      [![donation link](images/Donate.png)](https://psychosynthesis.github.io/Donation/)
+
+### About
 
 «TeleUI» is a lightweight components lib to easy build your Telegram mini-apps. In fact, the library is simple and universal, so it can actually be used for the web to. The main idea of «TeleUI» is to create a simple and minimalistic component library which will allow you to create applications look alike to the official Telegram Mini Apps interface, however, we do not aim to COMPLETELY copy their style guide for many reasons.
 
