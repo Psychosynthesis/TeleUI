@@ -137,10 +137,7 @@ const [amountInputVal, setAmountInputVal] = useState(null);
                         Just Button
                     </Components.Button>
                     <div>&nbsp;</div>
-                    <Components.Button
-                        onClick={() => {}}
-                        color="#2f6ea5"
-                    >
+                    <Components.Button onClick={() => {}} color="#2f6ea5">
                         <img src="https://psychosynthesis.github.io/TeleUI/icon.png" /> Button with child & color
                     </Components.Button>
                     <div>&nbsp;</div>
