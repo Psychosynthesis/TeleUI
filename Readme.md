@@ -1,6 +1,6 @@
 <h1>
     <p align="center">
-        TeleUI guide <img src="TeleUI logo.png" height="60" alt="TeleUI logo" />
+        TeleUI guide <img src="images/TeleUI logo.png" height="40" alt="TeleUI logo" />
     </p>
 </h1>
 
