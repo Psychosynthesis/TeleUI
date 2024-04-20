@@ -22,6 +22,15 @@ const Guide = () => {
     return (
         <div>
             <h2>TeleUI Guide</h2>
+            <div style={{ marginBottom: '40px' }} >
+                <a href="https://www.npmjs.org/package/teleui">
+                    <img src="https://img.shields.io/npm/v/teleui?color=%23047dec" alt="TeleUI NPM version" />
+                </a>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="https://github.com/Psychosynthesis/Donation">
+                    <img src="https://github.com/Psychosynthesis/TeleUI/blob/main/images/Donate.png?raw=true" alt="Donation link!" />
+                </a>
+            </div>
             <a target="_blank" rel="noopener noreferrer" href="https://www.npmjs.com/package/teleui">«TeleUI»</a> is a lightweight components lib to easy build your Telegram mini-apps.
             In fact, the library is simple and universal, so it can actually be used for the web to.
             The main idea of «TeleUI» is to create a simple and minimalistic component library which will allow
@@ -65,8 +74,8 @@ import { AmountInput, Button } from 'teleui';
             <div className="component-row">
                 <h3><a id="loader-component">Tabs</a></h3>
                 The tabs are familiar to everyone, very simple and understandable.
-                We didn’t even do the animation, but if you donate to us, maybe we’ll add it a little later.
-                Pay attention to the format in which the content should be transferred (in the example below).
+                We didn’t even do the animation, but if you <a href="https://github.com/Psychosynthesis/Donation">donate to me</a>,
+                maybe i’ll add it a little later. Pay attention to the format in which the content should be transferred (in the example below).
                 <br /><br />
                 <div className="component-tips-label">Demo:</div>
                 <div style={{ display: 'flex', justifyContent: 'space-around' }}>
@@ -283,7 +292,7 @@ const [amountInputVal, setAmountInputVal] = useState(null);
                 <div className="component-tips-label">Demo:</div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
                     <Components.DotSlider
-                        lineColor="#33fedf"
+                        lineColor="rgb(251, 35, 227)"
                         values={dotSliderVals}
                         valueSetter={setDotSliderVals}
                     />
@@ -300,7 +309,7 @@ const [dotSliderVals, setDotSliderVals] = useState([
 ]);
 ...
 <Components.DotSlider
-    lineColor="#33fedf"
+    lineColor="rgb(251, 35, 227)"
     values={dotSliderVals}
     valueSetter={setDotSliderVals}
 />
