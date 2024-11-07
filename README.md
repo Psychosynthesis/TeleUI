@@ -4,7 +4,7 @@
     </p>
 </h1>
 
-[![npm version](https://img.shields.io/npm/v/teleui?color=%23047dec)](https://www.npmjs.org/package/teleui)      [![donation link](images/Donate.png)](https://github.com/Psychosynthesis/Donation)
+[![npm version](https://img.shields.io/npm/v/teleui?color=%23047dec)](https://www.npmjs.org/package/teleui) &nbsp; &nbsp; [<img src="https://raw.githubusercontent.com/Psychosynthesis/Donation/main/images/Donate.png" alt="Donation page">](https://github.com/Psychosynthesis/Donation)
 
 ### About
 
